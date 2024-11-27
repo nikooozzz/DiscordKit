@@ -2,6 +2,11 @@
 // Created by Nikolai Käck on 2024-11-15.
 //
 
+/**
+* @file
+* Application-level setup
+*/
+
 #pragma once
 
 #include <boost/beast/websocket.hpp>
