@@ -13,18 +13,18 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v3
 
-      - name: cache doxygen and graphviz
+      - name: cache apt dependencies
         uses: actions/cache@v3
         with:
-            path: |
-              /usr/local/bin/doxygen
-              /usr/local/bin/graphviz
-            key: ${{ runner.os }}-doxygen-${{ hashFiles('**/docs/Doxyfile') }}
-            restore-keys: |
-              ${{ runner.os }}-doxygen-
+          path: |
+            /var/cache/apt
+            /var/lib/apt/lists
+          key: ${{ runner.os }}-apt-${{ hashFiles('**/docs/Doxyfile') }}
+          restore-keys: |
+            ${{ runner.os }}-apt-
 
       - name: setup doxygen
-        run: sudo apt-get install -y doxygen graphviz
+        run: sudo apt-get install -y doxygen
 
       - name: generate documentation
         run: |
