@@ -20,9 +20,7 @@ jobs:
         run: doxygen docs/Doxyfile
 
       - name: deploy to github pages
-        uses: JamesIves/github-pages-deploy-action@v4.1.0
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: main
+          branch: gh-pages
           folder: docs/html
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/html
