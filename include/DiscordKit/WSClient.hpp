@@ -20,21 +20,43 @@ public:
 		this->setGatewayURL_(token_);
 	};
 
+	/** @brief Connects to the WebSocket server. */
 	void Connect();
+
+	/** @brief Disconnects from the WebSocket server. */
 	void Disconnect();
+
+	/** @brief Reconnects to the WebSocket server. */
 	void Reconnect();
+
+	/** @brief Checks if the WebSocket connection is active.
+     *  @return `true` if connected, `false` otherwise.
+     */
 	bool IsConnected();
 
+	/** @brief Sends a message through the WebSocket connection. */
 	void SendMessage();
 
+	/** @brief Sets the callback function for message reception. */
 	void SetOnMessage();
+
+	/** @brief Sets the callback function for connection events. */
 	void SetOnConnect();
+
+	/** @brief Sets the callback function for disconnection events. */
 	void SetOnDisconnect();
+
+	/** @brief Sets the callback function for error events. */
 	void SetOnError();
 
 private:
+	/** @brief Handles the WebSocket handshake completion. */
 	void OnHandshakeComplete_();
+
+	/** @brief Handles errors during WebSocket communication. */
 	void HandleError_();
+
+	/** @brief Sets the gateway URL using the provided token */
 	void setGatewayURL_(std::string& token);
 
 	boost::beast::websocket::stream<boost::asio::ip::tcp::socket> ws_con_;
