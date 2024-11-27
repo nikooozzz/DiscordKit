@@ -9,12 +9,12 @@
 
 namespace DiscordKit::con {
 
-/*
+/**
 * @class WSClient
 * @brief this class handles a WebSocket connection
 *
 * it contains core methods for handling the websocket connection and adding callbacks to errors, connection calls and message handling
-* */
+*/
 class WSClient {
 public:
 	explicit WSClient(const std::string* token) : token_(*token) {
