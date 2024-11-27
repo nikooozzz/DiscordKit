@@ -16,9 +16,7 @@ jobs:
       - name: cache apt dependencies
         uses: actions/cache@v3
         with:
-          path: |
-            /var/cache/apt/archives
-            /var/lib/apt/lists
+          path: /var/cache/apt/archives/*.deb
           key: ${{ runner.os }}-apt-${{ hashFiles('**/docs/Doxyfile') }}
           restore-keys: |
             ${{ runner.os }}-apt-
