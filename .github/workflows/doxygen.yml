@@ -17,10 +17,12 @@ jobs:
         run: sudo apt-get install -y doxygen graphviz
 
       - name: generate documentation
-        run: doxygen docs/Doxyfile
+        run: |
+          cd $GITHUB_WORKSPACE
+          doxygen docs/Doxyfile
 
       - name: deploy to github pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: docs/html
+          folder: . 
