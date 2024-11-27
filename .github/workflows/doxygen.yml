@@ -13,6 +13,16 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v3
 
+      - name: cache doxygen and graphviz
+        uses: actions/cache@v3
+        with:
+            path: |
+              /usr/local/bin/doxygen
+              /usr/local/bin/graphviz
+            key: ${{ runner.os }}-doxygen-${{ hashFiles('**/docs/Doxyfile') }}
+            restore-keys: |
+              ${{ runner.os }}-doxygen-
+
       - name: setup doxygen
         run: sudo apt-get install -y doxygen graphviz
 
