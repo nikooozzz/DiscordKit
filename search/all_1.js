@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme_2emd_1',['README.md',['../da/ddd/README_8md.html',1,'']]]
+  ['connect_1',['Connect',['../d9/d61/classWSClient.html#ad71d623e32d0c97b1cd27f62484638ce',1,'WSClient']]]
 ];
