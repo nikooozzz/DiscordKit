@@ -17,7 +17,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: |
-            /var/cache/apt
+            /var/cache/apt/archives
             /var/lib/apt/lists
           key: ${{ runner.os }}-apt-${{ hashFiles('**/docs/Doxyfile') }}
           restore-keys: |
