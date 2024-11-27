@@ -24,19 +24,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./html
-
-      - name: Set Deployment Status
-        uses: actions/github-script@v6
-        if: always()
-        with:
-          script: |
-            const { context } = require('@actions/github');
-            const success = context.payload.workflow_run.conclusion === 'success';
-
-            await github.repos.createCommitStatus({
-              ...context.repo,
-              sha: context.sha,
-              state: success ? 'success' : 'failure',
-              description: success ? 'Docs deployed!' : 'Docs deployment failed',
-              context: 'github-pages'
-            });
