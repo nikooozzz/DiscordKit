@@ -227,3 +227,5 @@ include/*
 !/include/DiscordKit/
 build/
 CmakeFiles/
+
+docs/html

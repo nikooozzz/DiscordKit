@@ -8,7 +8,6 @@
 #include "Intents.hpp"
 #include "WSClient.hpp"
 
-namespace DiscordKit::con {
 
 class DiscordConnection {
 	utils::Intents intents;
@@ -24,4 +23,3 @@ class DiscordConnection {
 };
 
 
-}

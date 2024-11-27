@@ -12,7 +12,6 @@
 #include <boost/beast/websocket.hpp>
 #include <boost/asio/ip/tcp.hpp>
 
-namespace DiscordKit::con {
 
 /**
 * @brief This class handles a WebSocket connection
