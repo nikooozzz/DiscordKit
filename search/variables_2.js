@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resolver_5f_72',['resolver_',['../d9/d61/classWSClient.html#a7612b1e3c2f604bf53d60191972f8937',1,'WSClient']]]
+  ['token_5f_68',['token_',['../d9/d61/classWSClient.html#ae193b6850afb21c0b4f16770aa623b27',1,'WSClient']]]
 ];
