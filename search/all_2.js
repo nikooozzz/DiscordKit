@@ -5,5 +5,5 @@ var searchData=
   ['discordconnection_4',['DiscordConnection',['../d6/d16/classDiscordConnection.html',1,'DiscordConnection'],['../d6/d16/classDiscordConnection.html#a3f47dca939a8fa2d31f06740a8d7c205',1,'DiscordConnection::DiscordConnection()']]],
   ['discordconnection_2ehpp_5',['DiscordConnection.hpp',['../da/d52/DiscordConnection_8hpp.html',1,'']]],
   ['discordkit_6',['DiscordKit',['../index.html',1,'']]],
-  ['discordkit_2eh_7',['DiscordKit.h',['../dc/d60/DiscordKit_8h.html',1,'']]]
+  ['discordkit_2ehpp_7',['DiscordKit.hpp',['../df/dec/DiscordKit_8hpp.html',1,'']]]
 ];
