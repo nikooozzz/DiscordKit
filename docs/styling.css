@@ -1,0 +1,31 @@
+:root {
+    --bg-col: hsl(315, 10%, 16%);
+}
+
+body {
+    background: var(--bg-col);
+}
+
+header {
+    background: var(--bg-col);
+}
+
+.headertitle {
+    background: var(--bg-col);
+}
+
+#MSearchSelectWindow {
+    background: var(--bg-col);
+}
+
+#MSearchBox {
+    background: var(--bg-col);
+}
+
+.sm {
+    background: var(--bg-col);
+}
+
+#titlearea {
+    background: var(--bg-col)
+}
