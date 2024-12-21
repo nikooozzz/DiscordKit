@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['message_5freactions_80',['MESSAGE_REACTIONS',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045ea99a247f222c2ae4cc913d24a3fb3debb',1,'Intents.hpp']]]
+  ['heartbeat_152',['HEARTBEAT',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a0d895a0a05a7cce9b2c0c8bb252f78cc',1,'DiscordKit::opcodes']]],
+  ['heartbeat_5fack_153',['HEARTBEAT_ACK',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ae2acdd09db8a5e277dae4565b27dcfba',1,'DiscordKit::opcodes']]],
+  ['hello_154',['HELLO',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1aeb61eead90e3b899c6bcbe27ac581660',1,'DiscordKit::opcodes']]]
 ];

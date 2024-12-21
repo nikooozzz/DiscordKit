@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['gateway_5furl_5f_8',['gateway_url_',['../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89',1,'WSClient']]],
-  ['guild_5fbans_9',['GUILD_BANS',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045ea4ae021e00b3f78326e94c9007c414400',1,'Intents.hpp']]],
-  ['guild_5femojis_10',['GUILD_EMOJIS',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045ea22ac665e20b7255ed4238302a59cb0ac',1,'Intents.hpp']]],
-  ['guild_5finvites_11',['GUILD_INVITES',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045ea8e81cb9cfa81e400505f6e213660a0e4',1,'Intents.hpp']]],
-  ['guild_5fmembers_12',['GUILD_MEMBERS',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045ea88b4211f0a2bd49462ee16e787a6b695',1,'Intents.hpp']]],
-  ['guild_5fmessages_13',['GUILD_MESSAGES',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045eaa7dcea6454be56b9f9d96205b8a986be',1,'Intents.hpp']]],
-  ['guild_5fpresences_14',['GUILD_PRESENCES',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045eaaf0982a74882b4c5a2554b77d136ed77',1,'Intents.hpp']]],
-  ['guild_5fvoice_5fstates_15',['GUILD_VOICE_STATES',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045eab56eedad84dfa6b787e0729ea20d1c6b',1,'Intents.hpp']]],
-  ['guild_5fwebhooks_16',['GUILD_WEBHOOKS',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045ea1a5c6694f8e4477c287ee7d304d140f4',1,'Intents.hpp']]]
+  ['direct_5fmessages_6',['DIRECT_MESSAGES',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045ea65b389a495480bd8c8d9285d6b75244a',1,'Intents.hpp']]],
+  ['disconnect_7',['Disconnect',['../d9/d61/classWSClient.html#a3a77cc7b34dc829727790dc2e45d78ab',1,'WSClient']]],
+  ['discordconnection_8',['DiscordConnection',['../d6/d16/classDiscordConnection.html',1,'DiscordConnection'],['../d6/d16/classDiscordConnection.html#a3f47dca939a8fa2d31f06740a8d7c205',1,'DiscordConnection::DiscordConnection()']]],
+  ['discordconnection_2ehpp_9',['DiscordConnection.hpp',['../da/d52/DiscordConnection_8hpp.html',1,'']]],
+  ['discordkit_10',['DiscordKit',['../d3/dc7/namespaceDiscordKit.html',1,'DiscordKit'],['../index.html',1,'(Global Namespace)']]],
+  ['discordkit_2ehpp_11',['DiscordKit.hpp',['../df/dec/DiscordKit_8hpp.html',1,'']]],
+  ['dispatch_12',['DISPATCH',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ad21bb1180372f5ea28ce21d3af47b930',1,'DiscordKit::opcodes']]],
+  ['opcodes_13',['opcodes',['../db/dea/namespaceDiscordKit_1_1opcodes.html',1,'DiscordKit']]]
 ];

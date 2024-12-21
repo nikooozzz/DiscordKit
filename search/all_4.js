@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handleerror_5f_17',['HandleError_',['../d9/d61/classWSClient.html#aad285c69b2c07b98b281527f54893640',1,'WSClient']]]
+  ['fetchgatewayurl_5f_14',['fetchGatewayURL_',['../d9/d61/classWSClient.html#ad2b9fbd6293b809cfd3ca48771fbda3f',1,'WSClient']]]
 ];

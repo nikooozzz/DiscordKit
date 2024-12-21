@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['discordconnection_40',['DiscordConnection',['../d6/d16/classDiscordConnection.html',1,'']]]
+  ['discordconnection_86',['DiscordConnection',['../d6/d16/classDiscordConnection.html',1,'']]]
 ];

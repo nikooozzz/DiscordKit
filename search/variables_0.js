@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gateway_5furl_5f_65',['gateway_url_',['../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89',1,'WSClient']]]
+  ['buffer_5f_124',['buffer_',['../d9/d61/classWSClient.html#abe31668f2262e22533138eb5ef7c6de9',1,'WSClient']]]
 ];

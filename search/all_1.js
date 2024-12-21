@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['connect_1',['Connect',['../d9/d61/classWSClient.html#ad71d623e32d0c97b1cd27f62484638ce',1,'WSClient']]]
+  ['buffer_5f_4',['buffer_',['../d9/d61/classWSClient.html#abe31668f2262e22533138eb5ef7c6de9',1,'WSClient']]]
 ];

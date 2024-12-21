@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['intents_69',['Intents',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045e',1,'Intents.hpp']]]
+  ['gateway_136',['Gateway',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1',1,'DiscordKit::opcodes']]]
 ];
