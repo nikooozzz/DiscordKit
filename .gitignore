@@ -229,3 +229,5 @@ build/
 CmakeFiles/
 
 docs/html
+examples/*
+!examples/basicExample.cpp

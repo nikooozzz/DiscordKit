@@ -1,9 +1,11 @@
-#include "DiscordKit/conn/WSClient.hpp"
-#include <boost/asio.hpp>
+#include <list>
+
+#include <string>
+#include "DiscordKit/DiscordKit.hpp"
 
 int main() {
+	std::string token;
+	DiscordConnection bot{Intents::ALL};
 
-	boost::asio::io_context ioc;
-	DiscordKit::Connection::WSClient cl{ioc};
-
+	bot.run(token);
 }
