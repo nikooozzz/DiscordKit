@@ -1,0 +1,11 @@
+digraph "DiscordKit::Events::Handlers::AppCommandHandler"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="DiscordKit::Events\l::Handlers::AppCommandHandler",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DiscordKit::Events\l::Handlers::DispatchEventHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/de4/classDiscordKit_1_1Events_1_1Handlers_1_1DispatchEventHandler.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DiscordKit::Events\l::Handlers::GeneralHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dac/classDiscordKit_1_1Events_1_1Handlers_1_1GeneralHandler.html",tooltip=" "];
+}

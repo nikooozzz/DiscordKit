@@ -1,0 +1,14 @@
+digraph "include/DiscordKit" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d44c64559bbebec7f509842c48db8b23 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_d44c64559bbebec7f509842c48db8b23.html"]
+  subgraph clusterdir_3b82544024519ceaefbf0b385db19546 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_3b82544024519ceaefbf0b385db19546.html"];
+    dir_3b82544024519ceaefbf0b385db19546 [shape=plaintext label="DiscordKit"];
+  dir_297590b3aabe4e3103bdc9d227d18785 [shape=box label="MessageHandler" fillcolor="white" style="filled" URL="dir_297590b3aabe4e3103bdc9d227d18785.html"];
+  }
+  }
+  dir_3b82544024519ceaefbf0b385db19546->dir_297590b3aabe4e3103bdc9d227d18785 [headlabel="4", labeldistance=1.5 headhref="dir_000001_000002.html"];
+}
