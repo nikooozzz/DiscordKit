@@ -7,7 +7,7 @@
 #include <nlohmann/json.hpp>
 #include <string>
 
-namespace DiscordKit
+namespace DiscordKit::Events
 {
 
 	class Event

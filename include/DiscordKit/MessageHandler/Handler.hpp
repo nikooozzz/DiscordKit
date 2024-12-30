@@ -5,7 +5,7 @@
 #pragma once
 #include "Event.hpp"
 
-namespace DiscordKit::Handlers
+namespace DiscordKit::Events::Handlers
 {
 
 	class GeneralHandler

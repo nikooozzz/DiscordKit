@@ -6,31 +6,36 @@
 #include <functional>
 #include <nlohmann/json.hpp>
 
+#include "Event.hpp"
 #include "Handler.hpp"
 #include "Opcodes.hpp"
-#include "Event.hpp"
 
-using OP = DiscordKit::Opcode;
-using HandlerFunc = std::function<void(const DiscordKit::Event&)>;
+using OP		  = DiscordKit::Opcode;
+using HandlerFunc = std::function<void(const DiscordKit::Event &)>;
 
-void dispatch(const DiscordKit::Event& event);
+void dispatch(const DiscordKit::Event &event);
 
-class Dispatcher {
+namespace DiscordKit::Events
+{
+	class Dispatcher
+	{
 	public:
 		Dispatcher()
 		{
-			handlerMap[OP::DISPATCH] = dispatch;
+			handlerMap[OP::DISPATCH] = dispatch; // Example for future reference
 		};
 
-		void handle(const DiscordKit::Event& event)
+		void handle(const DiscordKit::Event &event)
 		{
 			if (const auto handler = handlerMap.find(event.opcode); handler != handlerMap.end()) {
 				handler->second(event);
-			} else {
+			}
+			else {
 				std::cerr << "Unknown opcode " << event.opcode << std::endl;
 			}
 		};
 
 	private:
 		std::unordered_map<int, HandlerFunc> handlerMap;
-};
+	};
+}
