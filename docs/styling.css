@@ -1,31 +1,9 @@
 :root {
-    --bg-col: hsl(315, 10%, 16%);
+    --bg-col: #000;
+    --font-color: #fff;
 }
 
 body {
     background: var(--bg-col);
-}
-
-header {
-    background: var(--bg-col);
-}
-
-.headertitle {
-    background: var(--bg-col);
-}
-
-#MSearchSelectWindow {
-    background: var(--bg-col);
-}
-
-#MSearchBox {
-    background: var(--bg-col);
-}
-
-.sm {
-    background: var(--bg-col);
-}
-
-#titlearea {
-    background: var(--bg-col)
+    color: var(--font-color);
 }
