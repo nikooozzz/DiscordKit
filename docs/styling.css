@@ -1,9 +1,57 @@
 :root {
-    --bg-col: #000;
+    --bg-col: #00111CFF;
+    --bg-col-light: #11222DFF;
+    --bg-col-light-2: #22333EFF;
     --font-color: #fff;
 }
 
 body {
     background: var(--bg-col);
     color: var(--font-color);
+}
+
+div.header {
+    background: var(--bg-col);
+}
+
+#nav-tree {
+    background: var(--bg-col-light-2);
+}
+
+#titlearea {
+    background: var(--bg-col);
+}
+
+#main-menu {
+    background: var(--bg-col-light);
+}
+
+div.sm.sm-dox {
+    background: none;
+    padding: 0;
+}
+
+.navpath ul {
+    background: none;
+    border: none;
+}
+
+.ui-resizable-e {
+    background: none;
+}
+
+.directory tr.even {
+    background: var(--bg-col-light-2);
+}
+
+.directory tr.odd {
+    background: var(--bg-col-light);
+}
+
+.classindex dl.even {
+    background: var(--bg-col-light-2);
+}
+
+.classindex dl.odd {
+    background: var(--bg-col-light);
 }
