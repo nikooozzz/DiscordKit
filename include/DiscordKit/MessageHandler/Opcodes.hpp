@@ -4,9 +4,9 @@
 
 #pragma once
 
-namespace DiscordKit::opcodes
+namespace DiscordKit
 {
-	enum class Gateway : int
+	enum Opcode : int
 	{
 		DISPATCH		   = 0, // An event was dispatched. Type: Recieve
 		HEARTBEAT		   = 1, // Fired periodically by the client to keep the connection alive. Type: Recieve & Send
@@ -26,7 +26,7 @@ namespace DiscordKit::opcodes
 		PAYLOAD_INVALID				 = 4002,
 		AUTHENTICATION_INVALID		 = 4003,
 		AUTHENTICATION_FAIL			 = 4004,
-		AUTHENCTICATION_ALREADY_DONE = 4005,
+		AUTHENTICATION_ALREADY_DONE = 4005,
 		INVALID_SEQ					 = 4007,
 		RATE_LIMIT					 = 4008,
 		SESSION_TIMEOUT				 = 4009,

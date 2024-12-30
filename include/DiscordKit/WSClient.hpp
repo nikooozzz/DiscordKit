@@ -22,8 +22,9 @@
 #include <thread>
 #include <utility>
 
-#include "DiscordKit/Opcodes.hpp"
 #include "DiscordKit/MessageHandler.hpp"
+#include "DiscordKit/MessageHandler/Dispatcher.hpp"
+#include "DiscordKit/MessageHandler/Opcodes.hpp"
 
 namespace beast		= boost::beast;
 namespace asio		= boost::asio;
@@ -41,15 +42,14 @@ class WSClient
 public:
 	explicit WSClient(std::string token) :
 		token_(std::move(token)), gateway_url_(fetchGatewayURL_()), ioc_(), ssl_ctx_(asio::ssl::context::tlsv12_client),
-		resolver_(ioc_), ws_(ioc_, ssl_ctx_),
-		handler_(*this)
+		resolver_(ioc_), ws_(ioc_, ssl_ctx_)
 	{
 		ssl_ctx_.set_default_verify_paths();
 	};
 
 	/** @brief Connects to the WebSocket server asynchronously. */
 	void Connect(bool isReconnect = false)
-	{#
+	{
 		resolver_.async_resolve(
 				gateway_url_, "443",
 				[this](const boost::system::error_code &resec, const tcp::resolver::results_type &results)
@@ -112,7 +112,7 @@ public:
 							   return;
 						   }
 
-						   const std::string msg = beast::buffers_to_string(buffer_.data());
+						   const nlohmann::json &msg = nlohmann::json::parse(beast::buffers_to_string(buffer_.data()));
 						   buffer_.consume(bytes);
 
 						   HandleMessage_(msg);
@@ -126,15 +126,13 @@ public:
 	{
 		if (ws_.is_open()) {
 			ws_.async_close(websocket::close_code::normal,
-				[this](const boost::system::error_code& ec)
-				{
-					HandleError_(ec, "Disconnect");
-				});
+							[this](const boost::system::error_code &ec) { HandleError_(ec, "Disconnect"); });
 		}
 	};
 
 	/** @brief Reconnects to the WebSocket server. */
-	void Reconnect(){
+	void Reconnect()
+	{
 		Connect(true);
 	};
 
@@ -161,9 +159,9 @@ public:
 
 private:
 	/** @brief Callback function for incoming websocket messages. */
-	void HandleMessage_(const std::string &msg) const
+	void HandleMessage_(const nlohmann::json &msg)
 	{
-		handler_.handle(msg);
+		dispatcher_.handle(DiscordKit::Event(msg));
 	};
 
 	/** @brief Handles errors during WebSocket communication. */
@@ -231,5 +229,5 @@ private:
 
 	beast::flat_buffer buffer_;
 
-	MessageHandler handler_;
+	Dispatcher dispatcher_;
 };
