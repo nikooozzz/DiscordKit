@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['parent_53',['parent',['../df/df2/classMessageHandler.html#a46c94c19e9fe6a1d2be125c9358bac59',1,'MessageHandler']]],
-  ['parse_54',['parse',['../df/df2/classMessageHandler.html#a22e3faa5551583765ffc32132b66a66c',1,'MessageHandler']]],
-  ['payload_5finvalid_55',['PAYLOAD_INVALID',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ae26e7035781724bd5e541e4a96fa9f87',1,'DiscordKit::opcodes']]],
-  ['presence_5fupdate_56',['PRESENCE_UPDATE',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a7293353d30c47a77c9dcbd4595856131',1,'DiscordKit::opcodes']]]
+  ['name_58',['name',['../df/d2c/classDiscordKit_1_1Event.html#a39de9049a9de95954aa921f136dbb573',1,'DiscordKit::Event']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['gateway_5furl_5f_125',['gateway_url_',['../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89',1,'WSClient']]]
+  ['data_146',['data',['../df/d2c/classDiscordKit_1_1Event.html#a20b82474a520674683fa73460605aa59',1,'DiscordKit::Event']]],
+  ['dispatcher_5f_147',['dispatcher_',['../d9/d61/classWSClient.html#a1493ba7df0cf19504af1bddc32099432',1,'WSClient']]]
 ];

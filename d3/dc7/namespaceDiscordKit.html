@@ -64,7 +64,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">DiscordKit Namespace Reference</div>  </div>
 </div><!--header-->
@@ -72,9 +74,151 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:db/dea/namespaceDiscordKit_1_1opcodes"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html">opcodes</a></td></tr>
+<tr class="memitem:d3/d45/namespaceDiscordKit_1_1Handlers"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d45/namespaceDiscordKit_1_1Handlers.html">Handlers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2c/classDiscordKit_1_1Event.html">Event</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a7064057207fe21dc8009463af15758ad"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ad">Opcode</a> : int { <br />
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada56565d5a86ddd0a38197068852a7309a">DISPATCH</a> = 0
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adaedeea45d4031b09dddc9787146e84199">HEARTBEAT</a> = 1
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada32bf82b6971a5aa4355ccd8aaf4c7f8b">IDENTIFY</a> = 2
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada9ff64279457046629dfd3b3b86d1d478">PRESENCE_UPDATE</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada0ecea33c070af393756fe1ceeb2f8d7e">VOICE_STATE_UPDATE</a> = 4
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada85c638669bd44f24a0157de5cf897ec1">RESUME</a> = 6
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada45f2457ee4ae6f64cf0bcceef4ed89ba">RECONNECT</a> = 7
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada102bd062846930a5f4fe9e91dc0ed35c">REQUEST_GUILD_MEMBERS</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adadba460ec1f86a1d827c6f5ba15ddda15">INVALID_SESSION</a> = 9
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adaad9062590fcbbb2510a87182fdf12215">HELLO</a> = 10
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada65b153ede68ae515bed31620afe57371">HEARTBEAT_ACK</a> = 11
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adafb93179b94e8bb81f4254cad5c973ae1">REQUEST_SOUNDBOARD_SOUNDS</a> = 31
+, <br />
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada243e156d74ac5260e5e827dce5d819df">UNKNOWN_ERROR</a> = 4000
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada01ae35693d46af95f6dacfd6a04cf410">UNKNOWN_OPCODE</a> = 4001
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada962a6acdd1ee12b4277cf9bfe75aa0cf">PAYLOAD_INVALID</a> = 4002
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adadb600f31fd2caff85c66cbb7e6c1892a">AUTHENTICATION_INVALID</a> = 4003
+, <br />
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada88eec73a30f7d7c17f91e8656dd666e4">AUTHENTICATION_FAIL</a> = 4004
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada35d852cb5c589d1b550b8a40b2aeb715">AUTHENTICATION_ALREADY_DONE</a> = 4005
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada23aa8b04ef1a93b3f360fe74eb1566ae">INVALID_SEQ</a> = 4007
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adae94fc24fdfdec8436dccb6bfd70bdde3">RATE_LIMIT</a> = 4008
+, <br />
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adafe281d0bd80d568256d90f9648e21d15">SESSION_TIMEOUT</a> = 4009
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada2051c41cd3087578c8909ba9792ea987">SHARD_INVALID</a> = 4010
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adab86f8134c819dcff8d20d7aafeeaf24e">SHARD_REQUIRED</a> = 4011
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adae16b4d41c7df879fe782c6f09c2631b9">INVALID_VERSION</a> = 4012
+, <br />
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adabd47432e176bd0255391b973c19f233b">INTENT_INVALID</a> = 4013
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adac8d2c89ea43d5ff7e2bbc177ebeecb25">INTENT_DISALLOWED</a> = 4014
+<br />
+ }</td></tr>
+<tr class="separator:a7064057207fe21dc8009463af15758ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a7064057207fe21dc8009463af15758ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7064057207fe21dc8009463af15758ad">&#9670;&nbsp;</a></span>Opcode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ad">DiscordKit::Opcode</a> : int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada56565d5a86ddd0a38197068852a7309a"></a>DISPATCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758adaedeea45d4031b09dddc9787146e84199"></a>HEARTBEAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada32bf82b6971a5aa4355ccd8aaf4c7f8b"></a>IDENTIFY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada9ff64279457046629dfd3b3b86d1d478"></a>PRESENCE_UPDATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada0ecea33c070af393756fe1ceeb2f8d7e"></a>VOICE_STATE_UPDATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada85c638669bd44f24a0157de5cf897ec1"></a>RESUME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada45f2457ee4ae6f64cf0bcceef4ed89ba"></a>RECONNECT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada102bd062846930a5f4fe9e91dc0ed35c"></a>REQUEST_GUILD_MEMBERS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758adadba460ec1f86a1d827c6f5ba15ddda15"></a>INVALID_SESSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758adaad9062590fcbbb2510a87182fdf12215"></a>HELLO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada65b153ede68ae515bed31620afe57371"></a>HEARTBEAT_ACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758adafb93179b94e8bb81f4254cad5c973ae1"></a>REQUEST_SOUNDBOARD_SOUNDS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada243e156d74ac5260e5e827dce5d819df"></a>UNKNOWN_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada01ae35693d46af95f6dacfd6a04cf410"></a>UNKNOWN_OPCODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada962a6acdd1ee12b4277cf9bfe75aa0cf"></a>PAYLOAD_INVALID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758adadb600f31fd2caff85c66cbb7e6c1892a"></a>AUTHENTICATION_INVALID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada88eec73a30f7d7c17f91e8656dd666e4"></a>AUTHENTICATION_FAIL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada35d852cb5c589d1b550b8a40b2aeb715"></a>AUTHENTICATION_ALREADY_DONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada23aa8b04ef1a93b3f360fe74eb1566ae"></a>INVALID_SEQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758adae94fc24fdfdec8436dccb6bfd70bdde3"></a>RATE_LIMIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758adafe281d0bd80d568256d90f9648e21d15"></a>SESSION_TIMEOUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758ada2051c41cd3087578c8909ba9792ea987"></a>SHARD_INVALID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758adab86f8134c819dcff8d20d7aafeeaf24e"></a>SHARD_REQUIRED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758adae16b4d41c7df879fe782c6f09c2631b9"></a>INVALID_VERSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758adabd47432e176bd0255391b973c19f233b"></a>INTENT_INVALID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7064057207fe21dc8009463af15758adac8d2c89ea43d5ff7e2bbc177ebeecb25"></a>INTENT_DISALLOWED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada56565d5a86ddd0a38197068852a7309a">DISPATCH</a>           = 0, <span class="comment">// An event was dispatched. Type: Recieve</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adaedeea45d4031b09dddc9787146e84199">HEARTBEAT</a>          = 1, <span class="comment">// Fired periodically by the client to keep the connection alive. Type: Recieve &amp; Send</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada32bf82b6971a5aa4355ccd8aaf4c7f8b">IDENTIFY</a>           = 2, <span class="comment">// Starts a new session during the initial handshake. Type: Send</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada9ff64279457046629dfd3b3b86d1d478">PRESENCE_UPDATE</a>    = 3, <span class="comment">// Update the client&#39;s presence. Type: Send</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada0ecea33c070af393756fe1ceeb2f8d7e">VOICE_STATE_UPDATE</a> = 4, <span class="comment">// Used to join/leave or move between voice channels. Type: Send</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada85c638669bd44f24a0157de5cf897ec1">RESUME</a>             = 6, <span class="comment">// Resume a previous session that was disconnected. Type: Send</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada45f2457ee4ae6f64cf0bcceef4ed89ba">RECONNECT</a>          = 7, <span class="comment">// Attempt to reconnect and resume immediately. Type: Recieve</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada102bd062846930a5f4fe9e91dc0ed35c">REQUEST_GUILD_MEMBERS</a> = 8,  <span class="comment">// Request information about offline guild members in a large guild.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adadba460ec1f86a1d827c6f5ba15ddda15">INVALID_SESSION</a>       = 9,  <span class="comment">// The session has been invalidated. Reconnect and identify/resume accordingly.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adaad9062590fcbbb2510a87182fdf12215">HELLO</a>                 = 10, <span class="comment">// Sent immediately after connecting, contains the heartbeat_interval to use.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada65b153ede68ae515bed31620afe57371">HEARTBEAT_ACK</a> = 11, <span class="comment">// Sent in response to receiving a heartbeat to acknowledge that it has been received.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adafb93179b94e8bb81f4254cad5c973ae1">REQUEST_SOUNDBOARD_SOUNDS</a> = 31, <span class="comment">// Request information about soundboard sounds in a set of guilds.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada243e156d74ac5260e5e827dce5d819df">UNKNOWN_ERROR</a>                = 4000,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada01ae35693d46af95f6dacfd6a04cf410">UNKNOWN_OPCODE</a>               = 4001,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada962a6acdd1ee12b4277cf9bfe75aa0cf">PAYLOAD_INVALID</a>              = 4002,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adadb600f31fd2caff85c66cbb7e6c1892a">AUTHENTICATION_INVALID</a>       = 4003,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada88eec73a30f7d7c17f91e8656dd666e4">AUTHENTICATION_FAIL</a>          = 4004,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada35d852cb5c589d1b550b8a40b2aeb715">AUTHENTICATION_ALREADY_DONE</a> = 4005,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada23aa8b04ef1a93b3f360fe74eb1566ae">INVALID_SEQ</a>                  = 4007,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adae94fc24fdfdec8436dccb6bfd70bdde3">RATE_LIMIT</a>                   = 4008,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adafe281d0bd80d568256d90f9648e21d15">SESSION_TIMEOUT</a>              = 4009,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada2051c41cd3087578c8909ba9792ea987">SHARD_INVALID</a>                = 4010,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adab86f8134c819dcff8d20d7aafeeaf24e">SHARD_REQUIRED</a>               = 4011,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adae16b4d41c7df879fe782c6f09c2631b9">INVALID_VERSION</a>              = 4012,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adabd47432e176bd0255391b973c19f233b">INTENT_INVALID</a>               = 4013,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adac8d2c89ea43d5ff7e2bbc177ebeecb25">INTENT_DISALLOWED</a>            = 4014</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada01ae35693d46af95f6dacfd6a04cf410"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada01ae35693d46af95f6dacfd6a04cf410">DiscordKit::UNKNOWN_OPCODE</a></div><div class="ttdeci">@ UNKNOWN_OPCODE</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:25</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada0ecea33c070af393756fe1ceeb2f8d7e"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada0ecea33c070af393756fe1ceeb2f8d7e">DiscordKit::VOICE_STATE_UPDATE</a></div><div class="ttdeci">@ VOICE_STATE_UPDATE</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:15</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada102bd062846930a5f4fe9e91dc0ed35c"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada102bd062846930a5f4fe9e91dc0ed35c">DiscordKit::REQUEST_GUILD_MEMBERS</a></div><div class="ttdeci">@ REQUEST_GUILD_MEMBERS</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:18</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada2051c41cd3087578c8909ba9792ea987"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada2051c41cd3087578c8909ba9792ea987">DiscordKit::SHARD_INVALID</a></div><div class="ttdeci">@ SHARD_INVALID</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:33</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada23aa8b04ef1a93b3f360fe74eb1566ae"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada23aa8b04ef1a93b3f360fe74eb1566ae">DiscordKit::INVALID_SEQ</a></div><div class="ttdeci">@ INVALID_SEQ</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:30</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada243e156d74ac5260e5e827dce5d819df"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada243e156d74ac5260e5e827dce5d819df">DiscordKit::UNKNOWN_ERROR</a></div><div class="ttdeci">@ UNKNOWN_ERROR</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:24</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada32bf82b6971a5aa4355ccd8aaf4c7f8b"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada32bf82b6971a5aa4355ccd8aaf4c7f8b">DiscordKit::IDENTIFY</a></div><div class="ttdeci">@ IDENTIFY</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:13</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada35d852cb5c589d1b550b8a40b2aeb715"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada35d852cb5c589d1b550b8a40b2aeb715">DiscordKit::AUTHENTICATION_ALREADY_DONE</a></div><div class="ttdeci">@ AUTHENTICATION_ALREADY_DONE</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:29</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada45f2457ee4ae6f64cf0bcceef4ed89ba"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada45f2457ee4ae6f64cf0bcceef4ed89ba">DiscordKit::RECONNECT</a></div><div class="ttdeci">@ RECONNECT</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:17</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada56565d5a86ddd0a38197068852a7309a"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada56565d5a86ddd0a38197068852a7309a">DiscordKit::DISPATCH</a></div><div class="ttdeci">@ DISPATCH</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:11</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada65b153ede68ae515bed31620afe57371"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada65b153ede68ae515bed31620afe57371">DiscordKit::HEARTBEAT_ACK</a></div><div class="ttdeci">@ HEARTBEAT_ACK</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:21</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada85c638669bd44f24a0157de5cf897ec1"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada85c638669bd44f24a0157de5cf897ec1">DiscordKit::RESUME</a></div><div class="ttdeci">@ RESUME</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:16</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada88eec73a30f7d7c17f91e8656dd666e4"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada88eec73a30f7d7c17f91e8656dd666e4">DiscordKit::AUTHENTICATION_FAIL</a></div><div class="ttdeci">@ AUTHENTICATION_FAIL</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:28</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada962a6acdd1ee12b4277cf9bfe75aa0cf"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada962a6acdd1ee12b4277cf9bfe75aa0cf">DiscordKit::PAYLOAD_INVALID</a></div><div class="ttdeci">@ PAYLOAD_INVALID</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:26</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758ada9ff64279457046629dfd3b3b86d1d478"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada9ff64279457046629dfd3b3b86d1d478">DiscordKit::PRESENCE_UPDATE</a></div><div class="ttdeci">@ PRESENCE_UPDATE</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:14</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758adaad9062590fcbbb2510a87182fdf12215"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adaad9062590fcbbb2510a87182fdf12215">DiscordKit::HELLO</a></div><div class="ttdeci">@ HELLO</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:20</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758adab86f8134c819dcff8d20d7aafeeaf24e"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adab86f8134c819dcff8d20d7aafeeaf24e">DiscordKit::SHARD_REQUIRED</a></div><div class="ttdeci">@ SHARD_REQUIRED</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:34</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758adabd47432e176bd0255391b973c19f233b"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adabd47432e176bd0255391b973c19f233b">DiscordKit::INTENT_INVALID</a></div><div class="ttdeci">@ INTENT_INVALID</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:36</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758adac8d2c89ea43d5ff7e2bbc177ebeecb25"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adac8d2c89ea43d5ff7e2bbc177ebeecb25">DiscordKit::INTENT_DISALLOWED</a></div><div class="ttdeci">@ INTENT_DISALLOWED</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:37</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758adadb600f31fd2caff85c66cbb7e6c1892a"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adadb600f31fd2caff85c66cbb7e6c1892a">DiscordKit::AUTHENTICATION_INVALID</a></div><div class="ttdeci">@ AUTHENTICATION_INVALID</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:27</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758adadba460ec1f86a1d827c6f5ba15ddda15"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adadba460ec1f86a1d827c6f5ba15ddda15">DiscordKit::INVALID_SESSION</a></div><div class="ttdeci">@ INVALID_SESSION</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:19</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758adae16b4d41c7df879fe782c6f09c2631b9"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adae16b4d41c7df879fe782c6f09c2631b9">DiscordKit::INVALID_VERSION</a></div><div class="ttdeci">@ INVALID_VERSION</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:35</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758adae94fc24fdfdec8436dccb6bfd70bdde3"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adae94fc24fdfdec8436dccb6bfd70bdde3">DiscordKit::RATE_LIMIT</a></div><div class="ttdeci">@ RATE_LIMIT</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:31</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758adaedeea45d4031b09dddc9787146e84199"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adaedeea45d4031b09dddc9787146e84199">DiscordKit::HEARTBEAT</a></div><div class="ttdeci">@ HEARTBEAT</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:12</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758adafb93179b94e8bb81f4254cad5c973ae1"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adafb93179b94e8bb81f4254cad5c973ae1">DiscordKit::REQUEST_SOUNDBOARD_SOUNDS</a></div><div class="ttdeci">@ REQUEST_SOUNDBOARD_SOUNDS</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:22</div></div>
+<div class="ttc" id="anamespaceDiscordKit_html_a7064057207fe21dc8009463af15758adafe281d0bd80d568256d90f9648e21d15"><div class="ttname"><a href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adafe281d0bd80d568256d90f9648e21d15">DiscordKit::SESSION_TIMEOUT</a></div><div class="ttdeci">@ SESSION_TIMEOUT</div><div class="ttdef"><b>Definition:</b> Opcodes.hpp:32</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

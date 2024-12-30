@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5fhandler_5f_102',['get_handler_',['../df/df2/classMessageHandler.html#ac27a3925ed5119ef7a13a078d66b99e2',1,'MessageHandler']]]
+  ['event_125',['Event',['../df/d2c/classDiscordKit_1_1Event.html#a3d37392a00920ec0666c450ac38c219c',1,'DiscordKit::Event']]]
 ];

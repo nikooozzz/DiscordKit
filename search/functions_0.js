@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['connect_98',['Connect',['../d9/d61/classWSClient.html#a533d5c9787bebff46426261f16cca288',1,'WSClient']]]
+  ['appcommandhandler_118',['AppCommandHandler',['../d3/ddf/classDiscordKit_1_1Handlers_1_1AppCommandHandler.html#a0a836768bbe1ef62bc31b3d644820f6f',1,'DiscordKit::Handlers::AppCommandHandler']]]
 ];

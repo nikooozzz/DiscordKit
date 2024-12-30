@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isconnected_107',['IsConnected',['../d9/d61/classWSClient.html#a54ec6fdb94ea87f2d03b31e83134522b',1,'WSClient']]]
+  ['generalhandler_127',['GeneralHandler',['../d1/d38/classDiscordKit_1_1Handlers_1_1GeneralHandler.html#a03f2a8c7c3a3a7f4ad7b0fd7d8dcfc42',1,'DiscordKit::Handlers::GeneralHandler']]]
 ];

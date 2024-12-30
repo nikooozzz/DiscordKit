@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['payload_5finvalid_162',['PAYLOAD_INVALID',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ae26e7035781724bd5e541e4a96fa9f87',1,'DiscordKit::opcodes']]],
-  ['presence_5fupdate_163',['PRESENCE_UPDATE',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a7293353d30c47a77c9dcbd4595856131',1,'DiscordKit::opcodes']]]
+  ['payload_5finvalid_190',['PAYLOAD_INVALID',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada962a6acdd1ee12b4277cf9bfe75aa0cf',1,'DiscordKit']]],
+  ['presence_5fupdate_191',['PRESENCE_UPDATE',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada9ff64279457046629dfd3b3b86d1d478',1,'DiscordKit']]]
 ];

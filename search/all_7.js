@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['identify_35',['IDENTIFY',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a24edefac71a18dafc768b5234ce7d789',1,'DiscordKit::opcodes']]],
-  ['intent_5fdisallowed_36',['INTENT_DISALLOWED',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1af60683188436057b3c13293f717cebcb',1,'DiscordKit::opcodes']]],
-  ['intent_5finvalid_37',['INTENT_INVALID',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a59d41e4e7107343de27a6b1e9f1095e9',1,'DiscordKit::opcodes']]],
-  ['intents_38',['intents',['../d6/d16/classDiscordConnection.html#aae7fdbafb4264e9ac7a3463fbee35598',1,'DiscordConnection']]],
-  ['intents_39',['Intents',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045e',1,'Intents.hpp']]],
-  ['intents_2ehpp_40',['Intents.hpp',['../d9/d28/Intents_8hpp.html',1,'']]],
-  ['invalid_5fseq_41',['INVALID_SEQ',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a99cba37f5b7fa6c97f39366c5338cc59',1,'DiscordKit::opcodes']]],
-  ['invalid_5fsession_42',['INVALID_SESSION',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a54dd8d19c8e7502e93a60280c1512acd',1,'DiscordKit::opcodes']]],
-  ['invalid_5fversion_43',['INVALID_VERSION',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a5f3740fef83818696e8b056c0456173f',1,'DiscordKit::opcodes']]],
-  ['ioc_5f_44',['ioc_',['../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709',1,'WSClient']]],
-  ['isconnected_45',['IsConnected',['../d9/d61/classWSClient.html#a54ec6fdb94ea87f2d03b31e83134522b',1,'WSClient']]]
+  ['handle_34',['handle',['../dc/d03/classDispatcher.html#aa09afe8455a6a295eaade49962cb39ef',1,'Dispatcher']]],
+  ['handleerror_5f_35',['HandleError_',['../d9/d61/classWSClient.html#a894dc5427ae7342260b9723c74a5939a',1,'WSClient']]],
+  ['handlemessage_5f_36',['HandleMessage_',['../d9/d61/classWSClient.html#aa8c2068cc8e8407f140a5390c52be10c',1,'WSClient']]],
+  ['handler_2ehpp_37',['Handler.hpp',['../da/ddd/Handler_8hpp.html',1,'']]],
+  ['handlerfunc_38',['HandlerFunc',['../d6/db9/Dispatcher_8hpp.html#ab13691f55d080639e4b737130981d79f',1,'Dispatcher.hpp']]],
+  ['handlermap_39',['handlerMap',['../dc/d03/classDispatcher.html#aee6a1b65018ad11e025947c944570aec',1,'Dispatcher']]],
+  ['handlers_40',['handlers',['../dc/d48/classDiscordKit_1_1Handlers_1_1SlashCommandHandler.html#afd8c95ab56d24351cc77aebcd889aef4',1,'DiscordKit::Handlers::SlashCommandHandler']]],
+  ['handles_5fop_41',['handles_op',['../d1/d38/classDiscordKit_1_1Handlers_1_1GeneralHandler.html#ab733651ef32fd9d72a9d9496bde136ab',1,'DiscordKit::Handlers::GeneralHandler::handles_op()'],['../d2/d2a/classDiscordKit_1_1Handlers_1_1DispatchEventHandler.html#aab88c2486bd8febbb91c03b6f21e417e',1,'DiscordKit::Handlers::DispatchEventHandler::handles_op()']]],
+  ['heartbeat_42',['HEARTBEAT',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adaedeea45d4031b09dddc9787146e84199',1,'DiscordKit']]],
+  ['heartbeat_5fack_43',['HEARTBEAT_ACK',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada65b153ede68ae515bed31620afe57371',1,'DiscordKit']]],
+  ['hello_44',['HELLO',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adaad9062590fcbbb2510a87182fdf12215',1,'DiscordKit']]]
 ];

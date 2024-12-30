@@ -90,27 +90,27 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d9e/Opcodes_8hpp.html">DiscordKit/Opcodes.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d08/MessageHandler_8hpp.html">DiscordKit/MessageHandler.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>beast     = boost::beast;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>asio      = boost::asio;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../de/d0f/WSClient_8hpp.html#a4b2c0fd18b7d3d44cd0e91270fffaff1">   30</a></span>&#160;<span class="keyword">using</span> <a class="code" href="../../de/d0f/WSClient_8hpp.html#a4b2c0fd18b7d3d44cd0e91270fffaff1">tcp</a>           = <a class="code" href="../../de/d0f/WSClient_8hpp.html#a4b2c0fd18b7d3d44cd0e91270fffaff1">asio::ip::tcp</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>websocket = beast::websocket;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d61/classWSClient.html">WSClient</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a0f1af1628e9ae1fed09e5c37d220fa87">   42</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/d61/classWSClient.html#a0f1af1628e9ae1fed09e5c37d220fa87">WSClient</a>(std::string token) :</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="../../d9/d61/classWSClient.html#ae193b6850afb21c0b4f16770aa623b27">token_</a>(std::move(token)), <a class="code" href="../../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89">gateway_url_</a>(<a class="code" href="../../d9/d61/classWSClient.html#ad2b9fbd6293b809cfd3ca48771fbda3f">fetchGatewayURL_</a>()), <a class="code" href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">ioc_</a>(), <a class="code" href="../../d9/d61/classWSClient.html#ae4900bc09e5e20190fa3570e60d1b98a">ssl_ctx_</a>(asio::ssl::context::tlsv12_client),</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="../../d9/d61/classWSClient.html#a91aa2a986373b340d8a9ba163a4f511d">resolver_</a>(<a class="code" href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">ioc_</a>), <a class="code" href="../../d9/d61/classWSClient.html#aae2b6c17efea2be2831e9ad51aba5c7a">ws_</a>(<a class="code" href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">ioc_</a>, <a class="code" href="../../d9/d61/classWSClient.html#ae4900bc09e5e20190fa3570e60d1b98a">ssl_ctx_</a>),</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="../../d9/d61/classWSClient.html#a42dc49010f0b25b96b2a6522a79f7ce3">handler_</a>(*this)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d08/MessageHandler_8hpp.html">DiscordKit/MessageHandler.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/db9/Dispatcher_8hpp.html">DiscordKit/MessageHandler/Dispatcher.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d9e/Opcodes_8hpp.html">DiscordKit/MessageHandler/Opcodes.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>beast     = boost::beast;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>asio      = boost::asio;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../de/d0f/WSClient_8hpp.html#a4b2c0fd18b7d3d44cd0e91270fffaff1">   31</a></span>&#160;<span class="keyword">using</span> <a class="code" href="../../de/d0f/WSClient_8hpp.html#a4b2c0fd18b7d3d44cd0e91270fffaff1">tcp</a>           = <a class="code" href="../../de/d0f/WSClient_8hpp.html#a4b2c0fd18b7d3d44cd0e91270fffaff1">asio::ip::tcp</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>websocket = beast::websocket;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d61/classWSClient.html">WSClient</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a0f1af1628e9ae1fed09e5c37d220fa87">   43</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/d61/classWSClient.html#a0f1af1628e9ae1fed09e5c37d220fa87">WSClient</a>(std::string token) :</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="../../d9/d61/classWSClient.html#ae193b6850afb21c0b4f16770aa623b27">token_</a>(std::move(token)), <a class="code" href="../../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89">gateway_url_</a>(<a class="code" href="../../d9/d61/classWSClient.html#ad2b9fbd6293b809cfd3ca48771fbda3f">fetchGatewayURL_</a>()), <a class="code" href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">ioc_</a>(), <a class="code" href="../../d9/d61/classWSClient.html#ae4900bc09e5e20190fa3570e60d1b98a">ssl_ctx_</a>(asio::ssl::context::tlsv12_client),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="../../d9/d61/classWSClient.html#a91aa2a986373b340d8a9ba163a4f511d">resolver_</a>(<a class="code" href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">ioc_</a>), <a class="code" href="../../d9/d61/classWSClient.html#aae2b6c17efea2be2831e9ad51aba5c7a">ws_</a>(<a class="code" href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">ioc_</a>, <a class="code" href="../../d9/d61/classWSClient.html#ae4900bc09e5e20190fa3570e60d1b98a">ssl_ctx_</a>)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="../../d9/d61/classWSClient.html#ae4900bc09e5e20190fa3570e60d1b98a">ssl_ctx_</a>.set_default_verify_paths();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a533d5c9787bebff46426261f16cca288">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#a533d5c9787bebff46426261f16cca288">Connect</a>(<span class="keywordtype">bool</span> isReconnect = <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {#</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="../../d9/d61/classWSClient.html#a91aa2a986373b340d8a9ba163a4f511d">resolver_</a>.async_resolve(</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <a class="code" href="../../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89">gateway_url_</a>, <span class="stringliteral">&quot;443&quot;</span>,</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                [<span class="keyword">this</span>](<span class="keyword">const</span> boost::system::error_code &amp;resec, <span class="keyword">const</span> tcp::resolver::results_type &amp;results)</div>
@@ -173,7 +173,7 @@ $(function() {
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                               <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                           }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                           <span class="keyword">const</span> std::string msg = beast::buffers_to_string(buffer_.data());</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                           <span class="keyword">const</span> nlohmann::json &amp;msg = nlohmann::json::parse(beast::buffers_to_string(buffer_.data()));</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                           buffer_.consume(bytes);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                           HandleMessage_(msg);</div>
@@ -186,129 +186,129 @@ $(function() {
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span> (ws_.is_open()) {</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            ws_.async_close(websocket::close_code::normal,</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                [<span class="keyword">this</span>](<span class="keyword">const</span> boost::system::error_code&amp; ec)</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    HandleError_(ec, <span class="stringliteral">&quot;Disconnect&quot;</span>);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                });</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    };</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a909f22a2378f3b94d478c30522c576ca">  137</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#a909f22a2378f3b94d478c30522c576ca">Reconnect</a>(){</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        Connect(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    };</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a54ec6fdb94ea87f2d03b31e83134522b">  144</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d9/d61/classWSClient.html#a54ec6fdb94ea87f2d03b31e83134522b">IsConnected</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">return</span> ws_.is_open();</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    };</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a4c300396bcf5bcdb01d9cbca3e5cd066">  150</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#a4c300396bcf5bcdb01d9cbca3e5cd066">SendMessage</a>();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a2ff5cc40e81149e1ecce7cac55fed82d">  153</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#a2ff5cc40e81149e1ecce7cac55fed82d">SetOnConnect</a>();</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a7140b69b991226c062cb8a06f1cbf774">  156</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#a7140b69b991226c062cb8a06f1cbf774">SetOnDisconnect</a>();</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#ac3f1a5536687abbf8e23ac9b876acae5">  159</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#ac3f1a5536687abbf8e23ac9b876acae5">SetOnError</a>();</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a3a092446f4cc86390d0bc10ef980278e">  164</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#a3a092446f4cc86390d0bc10ef980278e">HandleMessage_</a>(<span class="keyword">const</span> std::string &amp;msg)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        handler_.handle(msg);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    };</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a894dc5427ae7342260b9723c74a5939a">  170</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d9/d61/classWSClient.html#a894dc5427ae7342260b9723c74a5939a">HandleError_</a>(<span class="keyword">const</span> boost::system::error_code &amp;ec, <span class="keyword">const</span> std::string &amp;stage)</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">if</span> (ec) {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            std::cerr &lt;&lt; stage &lt;&lt; <span class="stringliteral">&quot; error: &quot;</span> &lt;&lt; ec.message() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            Reconnect();</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    };</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#ad2b9fbd6293b809cfd3ca48771fbda3f">  181</a></span>&#160;    std::string <a class="code" href="../../d9/d61/classWSClient.html#ad2b9fbd6293b809cfd3ca48771fbda3f">fetchGatewayURL_</a>()</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            asio::ssl::context ssl_ctx(asio::ssl::context::sslv23_client);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            tcp::resolver resolver{ioc_};</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keyword">auto</span> <span class="keyword">const</span> endpoint = resolver.resolve(<span class="stringliteral">&quot;discord.com&quot;</span>, <span class="stringliteral">&quot;https&quot;</span>);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            beast::tcp_stream stream{ioc_};</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            stream.connect(endpoint);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            beast::ssl_stream&lt;beast::tcp_stream&gt; ssl_stream(std::move(stream), ssl_ctx);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            ssl_stream.handshake(asio::ssl::stream_base::client);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            beast::http::request&lt;beast::http::string_body&gt; req{beast::http::verb::get, <span class="stringliteral">&quot;/api/v10/gateway&quot;</span>, 11};</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            req.set(beast::http::field::host, <span class="stringliteral">&quot;discord.com&quot;</span>);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            req.set(beast::http::field::user_agent, BOOST_BEAST_VERSION_STRING);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                            [<span class="keyword">this</span>](<span class="keyword">const</span> boost::system::error_code &amp;ec) { HandleError_(ec, <span class="stringliteral">&quot;Disconnect&quot;</span>); });</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    };</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a909f22a2378f3b94d478c30522c576ca">  134</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#a909f22a2378f3b94d478c30522c576ca">Reconnect</a>()</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        Connect(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    };</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a54ec6fdb94ea87f2d03b31e83134522b">  142</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d9/d61/classWSClient.html#a54ec6fdb94ea87f2d03b31e83134522b">IsConnected</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">return</span> ws_.is_open();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    };</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a4c300396bcf5bcdb01d9cbca3e5cd066">  148</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#a4c300396bcf5bcdb01d9cbca3e5cd066">SendMessage</a>();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a2ff5cc40e81149e1ecce7cac55fed82d">  151</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#a2ff5cc40e81149e1ecce7cac55fed82d">SetOnConnect</a>();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a7140b69b991226c062cb8a06f1cbf774">  154</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#a7140b69b991226c062cb8a06f1cbf774">SetOnDisconnect</a>();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#ac3f1a5536687abbf8e23ac9b876acae5">  157</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#ac3f1a5536687abbf8e23ac9b876acae5">SetOnError</a>();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#aa8c2068cc8e8407f140a5390c52be10c">  162</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#aa8c2068cc8e8407f140a5390c52be10c">HandleMessage_</a>(<span class="keyword">const</span> nlohmann::json &amp;msg)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        dispatcher_.handle(<a class="code" href="../../df/d2c/classDiscordKit_1_1Event.html">DiscordKit::Event</a>(msg));</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    };</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a894dc5427ae7342260b9723c74a5939a">  168</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d9/d61/classWSClient.html#a894dc5427ae7342260b9723c74a5939a">HandleError_</a>(<span class="keyword">const</span> boost::system::error_code &amp;ec, <span class="keyword">const</span> std::string &amp;stage)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span> (ec) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            std::cerr &lt;&lt; stage &lt;&lt; <span class="stringliteral">&quot; error: &quot;</span> &lt;&lt; ec.message() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            Reconnect();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    };</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#ad2b9fbd6293b809cfd3ca48771fbda3f">  179</a></span>&#160;    std::string <a class="code" href="../../d9/d61/classWSClient.html#ad2b9fbd6293b809cfd3ca48771fbda3f">fetchGatewayURL_</a>()</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            asio::ssl::context ssl_ctx(asio::ssl::context::sslv23_client);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            tcp::resolver resolver{ioc_};</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keyword">auto</span> <span class="keyword">const</span> endpoint = resolver.resolve(<span class="stringliteral">&quot;discord.com&quot;</span>, <span class="stringliteral">&quot;https&quot;</span>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            beast::tcp_stream stream{ioc_};</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            stream.connect(endpoint);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            beast::ssl_stream&lt;beast::tcp_stream&gt; ssl_stream(std::move(stream), ssl_ctx);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            ssl_stream.handshake(asio::ssl::stream_base::client);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            beast::http::request&lt;beast::http::string_body&gt; req{beast::http::verb::get, <span class="stringliteral">&quot;/api/v10/gateway&quot;</span>, 11};</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            req.set(beast::http::field::host, <span class="stringliteral">&quot;discord.com&quot;</span>);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            req.set(beast::http::field::user_agent, BOOST_BEAST_VERSION_STRING);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            beast::http::write(ssl_stream, req);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            beast::http::write(ssl_stream, req);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            beast::flat_buffer buffer;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            beast::http::response&lt;beast::http::string_body&gt; res;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            beast::http::read(ssl_stream, buffer, res);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            std::cout &lt;&lt; res &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            beast::flat_buffer buffer;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            beast::http::response&lt;beast::http::string_body&gt; res;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            beast::http::read(ssl_stream, buffer, res);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            std::cout &lt;&lt; res &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            ssl_stream.shutdown();</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            ssl_stream.shutdown();</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="keywordflow">return</span> nlohmann::json::parse(res.body())[<span class="stringliteral">&quot;url&quot;</span>];</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e) {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            std::cerr &lt;&lt; <span class="stringliteral">&quot;Error: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        }</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    };</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#afbc13240b569dc0677c90e24d9ea49ff">  219</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#afbc13240b569dc0677c90e24d9ea49ff">setGatewayURL_</a>()</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        this-&gt;gateway_url_ = fetchGatewayURL_();</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    };</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#ae193b6850afb21c0b4f16770aa623b27">  224</a></span>&#160;    std::string <a class="code" href="../../d9/d61/classWSClient.html#ae193b6850afb21c0b4f16770aa623b27">token_</a>;</div>
-<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89">  225</a></span>&#160;    std::string <a class="code" href="../../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89">gateway_url_</a>;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">  227</a></span>&#160;    asio::io_context <a class="code" href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">ioc_</a>;</div>
-<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#ae4900bc09e5e20190fa3570e60d1b98a">  228</a></span>&#160;    asio::ssl::context <a class="code" href="../../d9/d61/classWSClient.html#ae4900bc09e5e20190fa3570e60d1b98a">ssl_ctx_</a>;</div>
-<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a91aa2a986373b340d8a9ba163a4f511d">  229</a></span>&#160;    tcp::resolver <a class="code" href="../../d9/d61/classWSClient.html#a91aa2a986373b340d8a9ba163a4f511d">resolver_</a>;</div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#aae2b6c17efea2be2831e9ad51aba5c7a">  230</a></span>&#160;    websocket::stream&lt;beast::ssl_stream&lt;beast::tcp_stream&gt;&gt; <a class="code" href="../../d9/d61/classWSClient.html#aae2b6c17efea2be2831e9ad51aba5c7a">ws_</a>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="keywordflow">return</span> nlohmann::json::parse(res.body())[<span class="stringliteral">&quot;url&quot;</span>];</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        }</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e) {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            std::cerr &lt;&lt; <span class="stringliteral">&quot;Error: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    };</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#afbc13240b569dc0677c90e24d9ea49ff">  217</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#afbc13240b569dc0677c90e24d9ea49ff">setGatewayURL_</a>()</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        this-&gt;gateway_url_ = fetchGatewayURL_();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    };</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#ae193b6850afb21c0b4f16770aa623b27">  222</a></span>&#160;    std::string <a class="code" href="../../d9/d61/classWSClient.html#ae193b6850afb21c0b4f16770aa623b27">token_</a>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89">  223</a></span>&#160;    std::string <a class="code" href="../../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89">gateway_url_</a>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">  225</a></span>&#160;    asio::io_context <a class="code" href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">ioc_</a>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#ae4900bc09e5e20190fa3570e60d1b98a">  226</a></span>&#160;    asio::ssl::context <a class="code" href="../../d9/d61/classWSClient.html#ae4900bc09e5e20190fa3570e60d1b98a">ssl_ctx_</a>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a91aa2a986373b340d8a9ba163a4f511d">  227</a></span>&#160;    tcp::resolver <a class="code" href="../../d9/d61/classWSClient.html#a91aa2a986373b340d8a9ba163a4f511d">resolver_</a>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#aae2b6c17efea2be2831e9ad51aba5c7a">  228</a></span>&#160;    websocket::stream&lt;beast::ssl_stream&lt;beast::tcp_stream&gt;&gt; <a class="code" href="../../d9/d61/classWSClient.html#aae2b6c17efea2be2831e9ad51aba5c7a">ws_</a>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#abe31668f2262e22533138eb5ef7c6de9">  230</a></span>&#160;    beast::flat_buffer <a class="code" href="../../d9/d61/classWSClient.html#abe31668f2262e22533138eb5ef7c6de9">buffer_</a>;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#abe31668f2262e22533138eb5ef7c6de9">  232</a></span>&#160;    beast::flat_buffer <a class="code" href="../../d9/d61/classWSClient.html#abe31668f2262e22533138eb5ef7c6de9">buffer_</a>;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
-<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a42dc49010f0b25b96b2a6522a79f7ce3">  234</a></span>&#160;    <a class="code" href="../../df/df2/classMessageHandler.html">MessageHandler</a> <a class="code" href="../../d9/d61/classWSClient.html#a42dc49010f0b25b96b2a6522a79f7ce3">handler_</a>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;};</div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a1493ba7df0cf19504af1bddc32099432">  232</a></span>&#160;    <a class="code" href="../../dc/d03/classDispatcher.html">Dispatcher</a> <a class="code" href="../../d9/d61/classWSClient.html#a1493ba7df0cf19504af1bddc32099432">dispatcher_</a>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;};</div>
+<div class="ttc" id="aDispatcher_8hpp_html"><div class="ttname"><a href="../../d6/db9/Dispatcher_8hpp.html">Dispatcher.hpp</a></div></div>
 <div class="ttc" id="aMessageHandler_8hpp_html"><div class="ttname"><a href="../../d8/d08/MessageHandler_8hpp.html">MessageHandler.hpp</a></div></div>
 <div class="ttc" id="aOpcodes_8hpp_html"><div class="ttname"><a href="../../da/d9e/Opcodes_8hpp.html">Opcodes.hpp</a></div></div>
-<div class="ttc" id="aWSClient_8hpp_html_a4b2c0fd18b7d3d44cd0e91270fffaff1"><div class="ttname"><a href="../../de/d0f/WSClient_8hpp.html#a4b2c0fd18b7d3d44cd0e91270fffaff1">tcp</a></div><div class="ttdeci">asio::ip::tcp tcp</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:30</div></div>
-<div class="ttc" id="aclassMessageHandler_html"><div class="ttname"><a href="../../df/df2/classMessageHandler.html">MessageHandler</a></div><div class="ttdoc">Handler object for managing incoming messages from the Discord Websocket. Recieved in WSClient but in...</div><div class="ttdef"><b>Definition:</b> MessageHandler.hpp:19</div></div>
-<div class="ttc" id="aclassWSClient_html"><div class="ttname"><a href="../../d9/d61/classWSClient.html">WSClient</a></div><div class="ttdoc">This class handles a WebSocket connection.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:40</div></div>
-<div class="ttc" id="aclassWSClient_html_a0277175cd66c9ca43f037b1f39780709"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">WSClient::ioc_</a></div><div class="ttdeci">asio::io_context ioc_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:227</div></div>
-<div class="ttc" id="aclassWSClient_html_a0f1af1628e9ae1fed09e5c37d220fa87"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a0f1af1628e9ae1fed09e5c37d220fa87">WSClient::WSClient</a></div><div class="ttdeci">WSClient(std::string token)</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:42</div></div>
+<div class="ttc" id="aWSClient_8hpp_html_a4b2c0fd18b7d3d44cd0e91270fffaff1"><div class="ttname"><a href="../../de/d0f/WSClient_8hpp.html#a4b2c0fd18b7d3d44cd0e91270fffaff1">tcp</a></div><div class="ttdeci">asio::ip::tcp tcp</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:31</div></div>
+<div class="ttc" id="aclassDiscordKit_1_1Event_html"><div class="ttname"><a href="../../df/d2c/classDiscordKit_1_1Event.html">DiscordKit::Event</a></div><div class="ttdef"><b>Definition:</b> Event.hpp:14</div></div>
+<div class="ttc" id="aclassDispatcher_html"><div class="ttname"><a href="../../dc/d03/classDispatcher.html">Dispatcher</a></div><div class="ttdef"><b>Definition:</b> Dispatcher.hpp:18</div></div>
+<div class="ttc" id="aclassWSClient_html"><div class="ttname"><a href="../../d9/d61/classWSClient.html">WSClient</a></div><div class="ttdoc">This class handles a WebSocket connection.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:41</div></div>
+<div class="ttc" id="aclassWSClient_html_a0277175cd66c9ca43f037b1f39780709"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">WSClient::ioc_</a></div><div class="ttdeci">asio::io_context ioc_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:225</div></div>
+<div class="ttc" id="aclassWSClient_html_a0f1af1628e9ae1fed09e5c37d220fa87"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a0f1af1628e9ae1fed09e5c37d220fa87">WSClient::WSClient</a></div><div class="ttdeci">WSClient(std::string token)</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:43</div></div>
+<div class="ttc" id="aclassWSClient_html_a1493ba7df0cf19504af1bddc32099432"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a1493ba7df0cf19504af1bddc32099432">WSClient::dispatcher_</a></div><div class="ttdeci">Dispatcher dispatcher_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:232</div></div>
 <div class="ttc" id="aclassWSClient_html_a2ff5cc40e81149e1ecce7cac55fed82d"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a2ff5cc40e81149e1ecce7cac55fed82d">WSClient::SetOnConnect</a></div><div class="ttdeci">void SetOnConnect()</div><div class="ttdoc">Sets the callback function for connection events.</div></div>
-<div class="ttc" id="aclassWSClient_html_a3a092446f4cc86390d0bc10ef980278e"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a3a092446f4cc86390d0bc10ef980278e">WSClient::HandleMessage_</a></div><div class="ttdeci">void HandleMessage_(const std::string &amp;msg) const</div><div class="ttdoc">Callback function for incoming websocket messages.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:164</div></div>
 <div class="ttc" id="aclassWSClient_html_a3a77cc7b34dc829727790dc2e45d78ab"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a3a77cc7b34dc829727790dc2e45d78ab">WSClient::Disconnect</a></div><div class="ttdeci">void Disconnect()</div><div class="ttdoc">Disconnects from the WebSocket server.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:125</div></div>
-<div class="ttc" id="aclassWSClient_html_a3f81ff8090586e2945704ff8ea671f89"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89">WSClient::gateway_url_</a></div><div class="ttdeci">std::string gateway_url_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:225</div></div>
-<div class="ttc" id="aclassWSClient_html_a42dc49010f0b25b96b2a6522a79f7ce3"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a42dc49010f0b25b96b2a6522a79f7ce3">WSClient::handler_</a></div><div class="ttdeci">MessageHandler handler_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:234</div></div>
+<div class="ttc" id="aclassWSClient_html_a3f81ff8090586e2945704ff8ea671f89"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89">WSClient::gateway_url_</a></div><div class="ttdeci">std::string gateway_url_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:223</div></div>
 <div class="ttc" id="aclassWSClient_html_a4c300396bcf5bcdb01d9cbca3e5cd066"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a4c300396bcf5bcdb01d9cbca3e5cd066">WSClient::SendMessage</a></div><div class="ttdeci">void SendMessage()</div><div class="ttdoc">Sends a message through the WebSocket connection.</div></div>
 <div class="ttc" id="aclassWSClient_html_a533d5c9787bebff46426261f16cca288"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a533d5c9787bebff46426261f16cca288">WSClient::Connect</a></div><div class="ttdeci">void Connect(bool isReconnect=false)</div><div class="ttdoc">Connects to the WebSocket server asynchronously.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:51</div></div>
-<div class="ttc" id="aclassWSClient_html_a54ec6fdb94ea87f2d03b31e83134522b"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a54ec6fdb94ea87f2d03b31e83134522b">WSClient::IsConnected</a></div><div class="ttdeci">bool IsConnected() const</div><div class="ttdoc">Checks if the WebSocket connection is active.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:144</div></div>
+<div class="ttc" id="aclassWSClient_html_a54ec6fdb94ea87f2d03b31e83134522b"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a54ec6fdb94ea87f2d03b31e83134522b">WSClient::IsConnected</a></div><div class="ttdeci">bool IsConnected() const</div><div class="ttdoc">Checks if the WebSocket connection is active.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:142</div></div>
 <div class="ttc" id="aclassWSClient_html_a7140b69b991226c062cb8a06f1cbf774"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a7140b69b991226c062cb8a06f1cbf774">WSClient::SetOnDisconnect</a></div><div class="ttdeci">void SetOnDisconnect()</div><div class="ttdoc">Sets the callback function for disconnection events.</div></div>
 <div class="ttc" id="aclassWSClient_html_a880fdd6c9f4cffb65f33e9d9ad765f30"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a880fdd6c9f4cffb65f33e9d9ad765f30">WSClient::ReadLoop</a></div><div class="ttdeci">void ReadLoop()</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:104</div></div>
-<div class="ttc" id="aclassWSClient_html_a894dc5427ae7342260b9723c74a5939a"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a894dc5427ae7342260b9723c74a5939a">WSClient::HandleError_</a></div><div class="ttdeci">bool HandleError_(const boost::system::error_code &amp;ec, const std::string &amp;stage)</div><div class="ttdoc">Handles errors during WebSocket communication.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:170</div></div>
-<div class="ttc" id="aclassWSClient_html_a909f22a2378f3b94d478c30522c576ca"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a909f22a2378f3b94d478c30522c576ca">WSClient::Reconnect</a></div><div class="ttdeci">void Reconnect()</div><div class="ttdoc">Reconnects to the WebSocket server.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:137</div></div>
-<div class="ttc" id="aclassWSClient_html_a91aa2a986373b340d8a9ba163a4f511d"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a91aa2a986373b340d8a9ba163a4f511d">WSClient::resolver_</a></div><div class="ttdeci">tcp::resolver resolver_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:229</div></div>
+<div class="ttc" id="aclassWSClient_html_a894dc5427ae7342260b9723c74a5939a"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a894dc5427ae7342260b9723c74a5939a">WSClient::HandleError_</a></div><div class="ttdeci">bool HandleError_(const boost::system::error_code &amp;ec, const std::string &amp;stage)</div><div class="ttdoc">Handles errors during WebSocket communication.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:168</div></div>
+<div class="ttc" id="aclassWSClient_html_a909f22a2378f3b94d478c30522c576ca"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a909f22a2378f3b94d478c30522c576ca">WSClient::Reconnect</a></div><div class="ttdeci">void Reconnect()</div><div class="ttdoc">Reconnects to the WebSocket server.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:134</div></div>
+<div class="ttc" id="aclassWSClient_html_a91aa2a986373b340d8a9ba163a4f511d"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a91aa2a986373b340d8a9ba163a4f511d">WSClient::resolver_</a></div><div class="ttdeci">tcp::resolver resolver_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:227</div></div>
 <div class="ttc" id="aclassWSClient_html_aa5bb8f8ad2a1b16fe697750ca1c824d7"><div class="ttname"><a href="../../d9/d61/classWSClient.html#aa5bb8f8ad2a1b16fe697750ca1c824d7">WSClient::SendIdentity</a></div><div class="ttdeci">void SendIdentity()</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:85</div></div>
-<div class="ttc" id="aclassWSClient_html_aae2b6c17efea2be2831e9ad51aba5c7a"><div class="ttname"><a href="../../d9/d61/classWSClient.html#aae2b6c17efea2be2831e9ad51aba5c7a">WSClient::ws_</a></div><div class="ttdeci">websocket::stream&lt; beast::ssl_stream&lt; beast::tcp_stream &gt; &gt; ws_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:230</div></div>
-<div class="ttc" id="aclassWSClient_html_abe31668f2262e22533138eb5ef7c6de9"><div class="ttname"><a href="../../d9/d61/classWSClient.html#abe31668f2262e22533138eb5ef7c6de9">WSClient::buffer_</a></div><div class="ttdeci">beast::flat_buffer buffer_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:232</div></div>
+<div class="ttc" id="aclassWSClient_html_aa8c2068cc8e8407f140a5390c52be10c"><div class="ttname"><a href="../../d9/d61/classWSClient.html#aa8c2068cc8e8407f140a5390c52be10c">WSClient::HandleMessage_</a></div><div class="ttdeci">void HandleMessage_(const nlohmann::json &amp;msg)</div><div class="ttdoc">Callback function for incoming websocket messages.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:162</div></div>
+<div class="ttc" id="aclassWSClient_html_aae2b6c17efea2be2831e9ad51aba5c7a"><div class="ttname"><a href="../../d9/d61/classWSClient.html#aae2b6c17efea2be2831e9ad51aba5c7a">WSClient::ws_</a></div><div class="ttdeci">websocket::stream&lt; beast::ssl_stream&lt; beast::tcp_stream &gt; &gt; ws_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:228</div></div>
+<div class="ttc" id="aclassWSClient_html_abe31668f2262e22533138eb5ef7c6de9"><div class="ttname"><a href="../../d9/d61/classWSClient.html#abe31668f2262e22533138eb5ef7c6de9">WSClient::buffer_</a></div><div class="ttdeci">beast::flat_buffer buffer_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:230</div></div>
 <div class="ttc" id="aclassWSClient_html_ac3f1a5536687abbf8e23ac9b876acae5"><div class="ttname"><a href="../../d9/d61/classWSClient.html#ac3f1a5536687abbf8e23ac9b876acae5">WSClient::SetOnError</a></div><div class="ttdeci">void SetOnError()</div><div class="ttdoc">Sets the callback function for error events.</div></div>
-<div class="ttc" id="aclassWSClient_html_ad2b9fbd6293b809cfd3ca48771fbda3f"><div class="ttname"><a href="../../d9/d61/classWSClient.html#ad2b9fbd6293b809cfd3ca48771fbda3f">WSClient::fetchGatewayURL_</a></div><div class="ttdeci">std::string fetchGatewayURL_()</div><div class="ttdoc">Gets a gateway URL endpoint from the discord api.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:181</div></div>
-<div class="ttc" id="aclassWSClient_html_ae193b6850afb21c0b4f16770aa623b27"><div class="ttname"><a href="../../d9/d61/classWSClient.html#ae193b6850afb21c0b4f16770aa623b27">WSClient::token_</a></div><div class="ttdeci">std::string token_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:222</div></div>
-<div class="ttc" id="aclassWSClient_html_ae4900bc09e5e20190fa3570e60d1b98a"><div class="ttname"><a href="../../d9/d61/classWSClient.html#ae4900bc09e5e20190fa3570e60d1b98a">WSClient::ssl_ctx_</a></div><div class="ttdeci">asio::ssl::context ssl_ctx_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:228</div></div>
-<div class="ttc" id="aclassWSClient_html_afbc13240b569dc0677c90e24d9ea49ff"><div class="ttname"><a href="../../d9/d61/classWSClient.html#afbc13240b569dc0677c90e24d9ea49ff">WSClient::setGatewayURL_</a></div><div class="ttdeci">void setGatewayURL_()</div><div class="ttdoc">Sets the gateway URL member.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:219</div></div>
+<div class="ttc" id="aclassWSClient_html_ad2b9fbd6293b809cfd3ca48771fbda3f"><div class="ttname"><a href="../../d9/d61/classWSClient.html#ad2b9fbd6293b809cfd3ca48771fbda3f">WSClient::fetchGatewayURL_</a></div><div class="ttdeci">std::string fetchGatewayURL_()</div><div class="ttdoc">Gets a gateway URL endpoint from the discord api.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:179</div></div>
+<div class="ttc" id="aclassWSClient_html_ae193b6850afb21c0b4f16770aa623b27"><div class="ttname"><a href="../../d9/d61/classWSClient.html#ae193b6850afb21c0b4f16770aa623b27">WSClient::token_</a></div><div class="ttdeci">std::string token_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:220</div></div>
+<div class="ttc" id="aclassWSClient_html_ae4900bc09e5e20190fa3570e60d1b98a"><div class="ttname"><a href="../../d9/d61/classWSClient.html#ae4900bc09e5e20190fa3570e60d1b98a">WSClient::ssl_ctx_</a></div><div class="ttdeci">asio::ssl::context ssl_ctx_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:226</div></div>
+<div class="ttc" id="aclassWSClient_html_afbc13240b569dc0677c90e24d9ea49ff"><div class="ttname"><a href="../../d9/d61/classWSClient.html#afbc13240b569dc0677c90e24d9ea49ff">WSClient::setGatewayURL_</a></div><div class="ttdeci">void setGatewayURL_()</div><div class="ttdoc">Sets the gateway URL member.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:217</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

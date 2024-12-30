@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unknown_5ferror_172',['UNKNOWN_ERROR',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a9a10f345b0f755d461a8673a5e9ef6b4',1,'DiscordKit::opcodes']]],
-  ['unknown_5fopcode_173',['UNKNOWN_OPCODE',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1af2d9d7ac8ce1c92773e656196688c4a2',1,'DiscordKit::opcodes']]]
+  ['unknown_5ferror_200',['UNKNOWN_ERROR',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada243e156d74ac5260e5e827dce5d819df',1,'DiscordKit']]],
+  ['unknown_5fopcode_201',['UNKNOWN_OPCODE',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada01ae35693d46af95f6dacfd6a04cf410',1,'DiscordKit']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resolver_5f_131',['resolver_',['../d9/d61/classWSClient.html#a91aa2a986373b340d8a9ba163a4f511d',1,'WSClient']]]
+  ['name_154',['name',['../df/d2c/classDiscordKit_1_1Event.html#a39de9049a9de95954aa921f136dbb573',1,'DiscordKit::Event']]]
 ];

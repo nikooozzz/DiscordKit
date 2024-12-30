@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['voice_5fstate_5fupdate_82',['VOICE_STATE_UPDATE',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1acbe0c541208c10c2b73acb589052f251',1,'DiscordKit::opcodes']]]
+  ['tcp_90',['tcp',['../de/d0f/WSClient_8hpp.html#a4b2c0fd18b7d3d44cd0e91270fffaff1',1,'WSClient.hpp']]],
+  ['token_5f_91',['token_',['../d9/d61/classWSClient.html#ae193b6850afb21c0b4f16770aa623b27',1,'WSClient']]]
 ];

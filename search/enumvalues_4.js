@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['identify_155',['IDENTIFY',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a24edefac71a18dafc768b5234ce7d789',1,'DiscordKit::opcodes']]],
-  ['intent_5fdisallowed_156',['INTENT_DISALLOWED',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1af60683188436057b3c13293f717cebcb',1,'DiscordKit::opcodes']]],
-  ['intent_5finvalid_157',['INTENT_INVALID',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a59d41e4e7107343de27a6b1e9f1095e9',1,'DiscordKit::opcodes']]],
-  ['invalid_5fseq_158',['INVALID_SEQ',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a99cba37f5b7fa6c97f39366c5338cc59',1,'DiscordKit::opcodes']]],
-  ['invalid_5fsession_159',['INVALID_SESSION',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a54dd8d19c8e7502e93a60280c1512acd',1,'DiscordKit::opcodes']]],
-  ['invalid_5fversion_160',['INVALID_VERSION',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a5f3740fef83818696e8b056c0456173f',1,'DiscordKit::opcodes']]]
+  ['identify_183',['IDENTIFY',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada32bf82b6971a5aa4355ccd8aaf4c7f8b',1,'DiscordKit']]],
+  ['intent_5fdisallowed_184',['INTENT_DISALLOWED',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adac8d2c89ea43d5ff7e2bbc177ebeecb25',1,'DiscordKit']]],
+  ['intent_5finvalid_185',['INTENT_INVALID',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adabd47432e176bd0255391b973c19f233b',1,'DiscordKit']]],
+  ['invalid_5fseq_186',['INVALID_SEQ',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada23aa8b04ef1a93b3f360fe74eb1566ae',1,'DiscordKit']]],
+  ['invalid_5fsession_187',['INVALID_SESSION',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adadba460ec1f86a1d827c6f5ba15ddda15',1,'DiscordKit']]],
+  ['invalid_5fversion_188',['INVALID_VERSION',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adae16b4d41c7df879fe782c6f09c2631b9',1,'DiscordKit']]]
 ];

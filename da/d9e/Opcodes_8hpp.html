@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DiscordKit: include/DiscordKit/Opcodes.hpp File Reference</title>
+<title>DiscordKit: include/DiscordKit/MessageHandler/Opcodes.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_3b82544024519ceaefbf0b385db19546.html">DiscordKit</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_3b82544024519ceaefbf0b385db19546.html">DiscordKit</a></li><li class="navelem"><a class="el" href="../../dir_297590b3aabe4e3103bdc9d227d18785.html">MessageHandler</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,47 +81,45 @@ $(function() {
 Namespaces</h2></td></tr>
 <tr class="memitem:d3/dc7/namespaceDiscordKit"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc7/namespaceDiscordKit.html">DiscordKit</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:db/dea/namespaceDiscordKit_1_1opcodes"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html">DiscordKit::opcodes</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a9ec7105737bca4d1cb7cfee034c12ed1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1">DiscordKit::opcodes::Gateway</a> : int { <br />
-&#160;&#160;<a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ad21bb1180372f5ea28ce21d3af47b930">DiscordKit::opcodes::DISPATCH</a> = 0
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a0d895a0a05a7cce9b2c0c8bb252f78cc">DiscordKit::opcodes::HEARTBEAT</a> = 1
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a24edefac71a18dafc768b5234ce7d789">DiscordKit::opcodes::IDENTIFY</a> = 2
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a7293353d30c47a77c9dcbd4595856131">DiscordKit::opcodes::PRESENCE_UPDATE</a> = 3
+<tr class="memitem:a7064057207fe21dc8009463af15758ad"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ad">DiscordKit::Opcode</a> : int { <br />
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada56565d5a86ddd0a38197068852a7309a">DiscordKit::DISPATCH</a> = 0
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adaedeea45d4031b09dddc9787146e84199">DiscordKit::HEARTBEAT</a> = 1
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada32bf82b6971a5aa4355ccd8aaf4c7f8b">DiscordKit::IDENTIFY</a> = 2
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada9ff64279457046629dfd3b3b86d1d478">DiscordKit::PRESENCE_UPDATE</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1acbe0c541208c10c2b73acb589052f251">DiscordKit::opcodes::VOICE_STATE_UPDATE</a> = 4
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1abac2aec3ee8d7d495123dbe5ca2fdac9">DiscordKit::opcodes::RESUME</a> = 6
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a435d743b35551ea7106af41c4a308c01">DiscordKit::opcodes::RECONNECT</a> = 7
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ae64327af14d0d490f97d7ca6cca242bd">DiscordKit::opcodes::REQUEST_GUILD_MEMBERS</a> = 8
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada0ecea33c070af393756fe1ceeb2f8d7e">DiscordKit::VOICE_STATE_UPDATE</a> = 4
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada85c638669bd44f24a0157de5cf897ec1">DiscordKit::RESUME</a> = 6
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada45f2457ee4ae6f64cf0bcceef4ed89ba">DiscordKit::RECONNECT</a> = 7
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada102bd062846930a5f4fe9e91dc0ed35c">DiscordKit::REQUEST_GUILD_MEMBERS</a> = 8
 , <br />
-&#160;&#160;<a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a54dd8d19c8e7502e93a60280c1512acd">DiscordKit::opcodes::INVALID_SESSION</a> = 9
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1aeb61eead90e3b899c6bcbe27ac581660">DiscordKit::opcodes::HELLO</a> = 10
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ae2acdd09db8a5e277dae4565b27dcfba">DiscordKit::opcodes::HEARTBEAT_ACK</a> = 11
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1aa535170b33634e088d5385ea3f5d3109">DiscordKit::opcodes::REQUEST_SOUNDBOARD_SOUNDS</a> = 31
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adadba460ec1f86a1d827c6f5ba15ddda15">DiscordKit::INVALID_SESSION</a> = 9
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adaad9062590fcbbb2510a87182fdf12215">DiscordKit::HELLO</a> = 10
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada65b153ede68ae515bed31620afe57371">DiscordKit::HEARTBEAT_ACK</a> = 11
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adafb93179b94e8bb81f4254cad5c973ae1">DiscordKit::REQUEST_SOUNDBOARD_SOUNDS</a> = 31
 , <br />
-&#160;&#160;<a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a9a10f345b0f755d461a8673a5e9ef6b4">DiscordKit::opcodes::UNKNOWN_ERROR</a> = 4000
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1af2d9d7ac8ce1c92773e656196688c4a2">DiscordKit::opcodes::UNKNOWN_OPCODE</a> = 4001
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ae26e7035781724bd5e541e4a96fa9f87">DiscordKit::opcodes::PAYLOAD_INVALID</a> = 4002
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1adec4dea7c7cd5a9f47a20af770eb1a9d">DiscordKit::opcodes::AUTHENTICATION_INVALID</a> = 4003
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada243e156d74ac5260e5e827dce5d819df">DiscordKit::UNKNOWN_ERROR</a> = 4000
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada01ae35693d46af95f6dacfd6a04cf410">DiscordKit::UNKNOWN_OPCODE</a> = 4001
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada962a6acdd1ee12b4277cf9bfe75aa0cf">DiscordKit::PAYLOAD_INVALID</a> = 4002
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adadb600f31fd2caff85c66cbb7e6c1892a">DiscordKit::AUTHENTICATION_INVALID</a> = 4003
 , <br />
-&#160;&#160;<a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ae55d6adc994be98484f9142a4ba730ce">DiscordKit::opcodes::AUTHENTICATION_FAIL</a> = 4004
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a9b87ad36156f0b551f3589eb127be178">DiscordKit::opcodes::AUTHENCTICATION_ALREADY_DONE</a> = 4005
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a99cba37f5b7fa6c97f39366c5338cc59">DiscordKit::opcodes::INVALID_SEQ</a> = 4007
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a03d673a8dd0d7b961f8e5ce48ba96a77">DiscordKit::opcodes::RATE_LIMIT</a> = 4008
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada88eec73a30f7d7c17f91e8656dd666e4">DiscordKit::AUTHENTICATION_FAIL</a> = 4004
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada35d852cb5c589d1b550b8a40b2aeb715">DiscordKit::AUTHENTICATION_ALREADY_DONE</a> = 4005
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada23aa8b04ef1a93b3f360fe74eb1566ae">DiscordKit::INVALID_SEQ</a> = 4007
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adae94fc24fdfdec8436dccb6bfd70bdde3">DiscordKit::RATE_LIMIT</a> = 4008
 , <br />
-&#160;&#160;<a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ae5daa5fbf96c73654d6b4cde109a74bc">DiscordKit::opcodes::SESSION_TIMEOUT</a> = 4009
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ae977a2fb0896d1646c6b47e0ae7a74ce">DiscordKit::opcodes::SHARD_INVALID</a> = 4010
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a108a4f90f31373afba976f83c133a321">DiscordKit::opcodes::SHARD_REQUIRED</a> = 4011
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a5f3740fef83818696e8b056c0456173f">DiscordKit::opcodes::INVALID_VERSION</a> = 4012
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adafe281d0bd80d568256d90f9648e21d15">DiscordKit::SESSION_TIMEOUT</a> = 4009
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada2051c41cd3087578c8909ba9792ea987">DiscordKit::SHARD_INVALID</a> = 4010
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adab86f8134c819dcff8d20d7aafeeaf24e">DiscordKit::SHARD_REQUIRED</a> = 4011
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adae16b4d41c7df879fe782c6f09c2631b9">DiscordKit::INVALID_VERSION</a> = 4012
 , <br />
-&#160;&#160;<a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a59d41e4e7107343de27a6b1e9f1095e9">DiscordKit::opcodes::INTENT_INVALID</a> = 4013
-, <a class="el" href="../../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1af60683188436057b3c13293f717cebcb">DiscordKit::opcodes::INTENT_DISALLOWED</a> = 4014
+&#160;&#160;<a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adabd47432e176bd0255391b973c19f233b">DiscordKit::INTENT_INVALID</a> = 4013
+, <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adac8d2c89ea43d5ff7e2bbc177ebeecb25">DiscordKit::INTENT_DISALLOWED</a> = 4014
 <br />
  }</td></tr>
-<tr class="separator:a9ec7105737bca4d1cb7cfee034c12ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7064057207fe21dc8009463af15758ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

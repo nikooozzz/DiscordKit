@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ws_5f_83',['ws_',['../d9/d61/classWSClient.html#aae2b6c17efea2be2831e9ad51aba5c7a',1,'WSClient']]],
-  ['wsclient_84',['WSClient',['../d9/d61/classWSClient.html',1,'WSClient'],['../d9/d61/classWSClient.html#a0f1af1628e9ae1fed09e5c37d220fa87',1,'WSClient::WSClient()']]],
-  ['wsclient_2ehpp_85',['WSClient.hpp',['../de/d0f/WSClient_8hpp.html',1,'']]]
+  ['unknown_5ferror_92',['UNKNOWN_ERROR',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada243e156d74ac5260e5e827dce5d819df',1,'DiscordKit']]],
+  ['unknown_5fopcode_93',['UNKNOWN_OPCODE',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada01ae35693d46af95f6dacfd6a04cf410',1,'DiscordKit']]]
 ];

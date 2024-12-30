@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tcp_135',['tcp',['../de/d0f/WSClient_8hpp.html#a4b2c0fd18b7d3d44cd0e91270fffaff1',1,'WSClient.hpp']]]
+  ['handlerfunc_161',['HandlerFunc',['../d6/db9/Dispatcher_8hpp.html#ab13691f55d080639e4b737130981d79f',1,'Dispatcher.hpp']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wsclient_88',['WSClient',['../d9/d61/classWSClient.html',1,'']]]
+  ['event_102',['Event',['../df/d2c/classDiscordKit_1_1Event.html',1,'DiscordKit']]]
 ];

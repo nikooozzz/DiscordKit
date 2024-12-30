@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['all_138',['ALL',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045ea5fb1f955b45e38e31789286a1790398d',1,'Intents.hpp']]],
-  ['authenctication_5falready_5fdone_139',['AUTHENCTICATION_ALREADY_DONE',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a9b87ad36156f0b551f3589eb127be178',1,'DiscordKit::opcodes']]],
-  ['authentication_5ffail_140',['AUTHENTICATION_FAIL',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ae55d6adc994be98484f9142a4ba730ce',1,'DiscordKit::opcodes']]],
-  ['authentication_5finvalid_141',['AUTHENTICATION_INVALID',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1adec4dea7c7cd5a9f47a20af770eb1a9d',1,'DiscordKit::opcodes']]]
+  ['all_166',['ALL',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045ea5fb1f955b45e38e31789286a1790398d',1,'Intents.hpp']]],
+  ['authentication_5falready_5fdone_167',['AUTHENTICATION_ALREADY_DONE',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada35d852cb5c589d1b550b8a40b2aeb715',1,'DiscordKit']]],
+  ['authentication_5ffail_168',['AUTHENTICATION_FAIL',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada88eec73a30f7d7c17f91e8656dd666e4',1,'DiscordKit']]],
+  ['authentication_5finvalid_169',['AUTHENTICATION_INVALID',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adadb600f31fd2caff85c66cbb7e6c1892a',1,'DiscordKit']]]
 ];

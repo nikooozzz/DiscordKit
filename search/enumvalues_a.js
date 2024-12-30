@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['voice_5fstate_5fupdate_174',['VOICE_STATE_UPDATE',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1acbe0c541208c10c2b73acb589052f251',1,'DiscordKit::opcodes']]]
+  ['voice_5fstate_5fupdate_202',['VOICE_STATE_UPDATE',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada0ecea33c070af393756fe1ceeb2f8d7e',1,'DiscordKit']]]
 ];

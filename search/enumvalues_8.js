@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['session_5ftimeout_169',['SESSION_TIMEOUT',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ae5daa5fbf96c73654d6b4cde109a74bc',1,'DiscordKit::opcodes']]],
-  ['shard_5finvalid_170',['SHARD_INVALID',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1ae977a2fb0896d1646c6b47e0ae7a74ce',1,'DiscordKit::opcodes']]],
-  ['shard_5frequired_171',['SHARD_REQUIRED',['../db/dea/namespaceDiscordKit_1_1opcodes.html#a9ec7105737bca4d1cb7cfee034c12ed1a108a4f90f31373afba976f83c133a321',1,'DiscordKit::opcodes']]]
+  ['session_5ftimeout_197',['SESSION_TIMEOUT',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adafe281d0bd80d568256d90f9648e21d15',1,'DiscordKit']]],
+  ['shard_5finvalid_198',['SHARD_INVALID',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada2051c41cd3087578c8909ba9792ea987',1,'DiscordKit']]],
+  ['shard_5frequired_199',['SHARD_REQUIRED',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adab86f8134c819dcff8d20d7aafeeaf24e',1,'DiscordKit']]]
 ];
