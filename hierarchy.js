@@ -10,5 +10,5 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "WSClient", "d9/d61/classWSClient.html", null ]
+    [ "DiscordKit::WSClient", "d1/d0c/classDiscordKit_1_1WSClient.html", null ]
 ];

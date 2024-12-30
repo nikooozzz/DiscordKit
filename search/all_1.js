@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['buffer_5f_5',['buffer_',['../d9/d61/classWSClient.html#abe31668f2262e22533138eb5ef7c6de9',1,'WSClient']]]
+  ['buffer_5f_5',['buffer_',['../d1/d0c/classDiscordKit_1_1WSClient.html#a8a0c2c3fc8093b155578fe037fdd5308',1,'DiscordKit::WSClient']]]
 ];

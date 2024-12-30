@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['disconnect_122',['Disconnect',['../d9/d61/classWSClient.html#a3a77cc7b34dc829727790dc2e45d78ab',1,'WSClient']]],
+  ['disconnect_122',['Disconnect',['../d1/d0c/classDiscordKit_1_1WSClient.html#a5b019ffa172faf1fccf181bad9f6e6e7',1,'DiscordKit::WSClient']]],
   ['discordconnection_123',['DiscordConnection',['../d8/d17/classDiscordKit_1_1DiscordConnection.html#a625dab4e0896a9aa138d1cb364450629',1,'DiscordKit::DiscordConnection']]],
   ['dispatch_124',['dispatch',['../d6/db9/Dispatcher_8hpp.html#a6b7146bff9d8be83857a647ad3cc31a0',1,'Dispatcher.hpp']]],
   ['dispatcher_125',['Dispatcher',['../d8/d82/classDiscordKit_1_1Events_1_1Dispatcher.html#a51a2025b9d085e78900a71c9131de303',1,'DiscordKit::Events::Dispatcher']]],

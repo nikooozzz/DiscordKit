@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="WSClient",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d61/classWSClient.html",tooltip="This class handles a WebSocket connection."];
+  Node0 [label="DiscordKit::WSClient",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d0c/classDiscordKit_1_1WSClient.html",tooltip=" "];
 }

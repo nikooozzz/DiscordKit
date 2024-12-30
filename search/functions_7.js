@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isconnected_133',['IsConnected',['../d9/d61/classWSClient.html#a54ec6fdb94ea87f2d03b31e83134522b',1,'WSClient']]]
+  ['isconnected_133',['IsConnected',['../d1/d0c/classDiscordKit_1_1WSClient.html#af11cc428594c9102664a4ec95992053a',1,'DiscordKit::WSClient']]]
 ];

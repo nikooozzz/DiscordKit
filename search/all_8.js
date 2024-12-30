@@ -9,6 +9,6 @@ var searchData=
   ['invalid_5fseq_52',['INVALID_SEQ',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada23aa8b04ef1a93b3f360fe74eb1566ae',1,'DiscordKit']]],
   ['invalid_5fsession_53',['INVALID_SESSION',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adadba460ec1f86a1d827c6f5ba15ddda15',1,'DiscordKit']]],
   ['invalid_5fversion_54',['INVALID_VERSION',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adae16b4d41c7df879fe782c6f09c2631b9',1,'DiscordKit']]],
-  ['ioc_5f_55',['ioc_',['../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709',1,'WSClient']]],
-  ['isconnected_56',['IsConnected',['../d9/d61/classWSClient.html#a54ec6fdb94ea87f2d03b31e83134522b',1,'WSClient']]]
+  ['ioc_5f_55',['ioc_',['../d1/d0c/classDiscordKit_1_1WSClient.html#a4bfa4cfca3fb5342f657f77b35177284',1,'DiscordKit::WSClient']]],
+  ['isconnected_56',['IsConnected',['../d1/d0c/classDiscordKit_1_1WSClient.html#af11cc428594c9102664a4ec95992053a',1,'DiscordKit::WSClient']]]
 ];

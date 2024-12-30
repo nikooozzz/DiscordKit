@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wsclient_146',['WSClient',['../d9/d61/classWSClient.html#a0f1af1628e9ae1fed09e5c37d220fa87',1,'WSClient']]]
+  ['wsclient_146',['WSClient',['../d1/d0c/classDiscordKit_1_1WSClient.html#ac4f68df5aed1d628899ea1dc5931f8d7',1,'DiscordKit::WSClient']]]
 ];

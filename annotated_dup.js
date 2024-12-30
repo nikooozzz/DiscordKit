@@ -11,7 +11,7 @@ var annotated_dup =
         [ "Dispatcher", "d8/d82/classDiscordKit_1_1Events_1_1Dispatcher.html", "d8/d82/classDiscordKit_1_1Events_1_1Dispatcher" ],
         [ "Event", "d0/d16/classDiscordKit_1_1Events_1_1Event.html", "d0/d16/classDiscordKit_1_1Events_1_1Event" ]
       ] ],
-      [ "DiscordConnection", "d8/d17/classDiscordKit_1_1DiscordConnection.html", "d8/d17/classDiscordKit_1_1DiscordConnection" ]
-    ] ],
-    [ "WSClient", "d9/d61/classWSClient.html", "d9/d61/classWSClient" ]
+      [ "DiscordConnection", "d8/d17/classDiscordKit_1_1DiscordConnection.html", "d8/d17/classDiscordKit_1_1DiscordConnection" ],
+      [ "WSClient", "d1/d0c/classDiscordKit_1_1WSClient.html", "d1/d0c/classDiscordKit_1_1WSClient" ]
+    ] ]
 ];

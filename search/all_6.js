@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['gateway_5furl_5f_25',['gateway_url_',['../d9/d61/classWSClient.html#a3f81ff8090586e2945704ff8ea671f89',1,'WSClient']]],
+  ['gateway_5furl_5f_25',['gateway_url_',['../d1/d0c/classDiscordKit_1_1WSClient.html#a193b09add6e66b5ae00946a46c9f515d',1,'DiscordKit::WSClient']]],
   ['generalhandler_26',['GeneralHandler',['../dc/dac/classDiscordKit_1_1Events_1_1Handlers_1_1GeneralHandler.html',1,'DiscordKit::Events::Handlers::GeneralHandler'],['../dc/dac/classDiscordKit_1_1Events_1_1Handlers_1_1GeneralHandler.html#a389c17255b19dbfe15642384a35b545e',1,'DiscordKit::Events::Handlers::GeneralHandler::GeneralHandler()']]],
   ['guild_5fbans_27',['GUILD_BANS',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045ea4ae021e00b3f78326e94c9007c414400',1,'Intents.hpp']]],
   ['guild_5femojis_28',['GUILD_EMOJIS',['../d9/d28/Intents_8hpp.html#a4e900c59bedda933d7254491bf0c045ea22ac665e20b7255ed4238302a59cb0ac',1,'Intents.hpp']]],

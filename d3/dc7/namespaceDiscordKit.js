@@ -2,6 +2,7 @@ var namespaceDiscordKit =
 [
     [ "Events", "df/dfe/namespaceDiscordKit_1_1Events.html", "df/dfe/namespaceDiscordKit_1_1Events" ],
     [ "DiscordConnection", "d8/d17/classDiscordKit_1_1DiscordConnection.html", "d8/d17/classDiscordKit_1_1DiscordConnection" ],
+    [ "WSClient", "d1/d0c/classDiscordKit_1_1WSClient.html", "d1/d0c/classDiscordKit_1_1WSClient" ],
     [ "Opcode", "d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ad", [
       [ "DISPATCH", "d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada56565d5a86ddd0a38197068852a7309a", null ],
       [ "HEARTBEAT", "d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adaedeea45d4031b09dddc9787146e84199", null ],
