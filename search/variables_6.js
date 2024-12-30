@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['opcode_155',['opcode',['../df/d2c/classDiscordKit_1_1Event.html#a26f614e517f4bd4133b442180189938e',1,'DiscordKit::Event']]]
+  ['opcode_157',['opcode',['../d0/d16/classDiscordKit_1_1Events_1_1Event.html#af096f1357a58770e5ed677bb967d01b1',1,'DiscordKit::Events::Event']]]
 ];

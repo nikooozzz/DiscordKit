@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['event_21',['Event',['../df/d2c/classDiscordKit_1_1Event.html',1,'DiscordKit::Event'],['../df/d2c/classDiscordKit_1_1Event.html#a3d37392a00920ec0666c450ac38c219c',1,'DiscordKit::Event::Event()']]],
-  ['event_2ehpp_22',['Event.hpp',['../df/d7d/Event_8hpp.html',1,'']]]
+  ['event_22',['Event',['../d0/d16/classDiscordKit_1_1Events_1_1Event.html',1,'DiscordKit::Events::Event'],['../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a9eca85de66c9cf2828ab4ab4892609c7',1,'DiscordKit::Events::Event::Event()']]],
+  ['event_2ehpp_23',['Event.hpp',['../df/d7d/Event_8hpp.html',1,'']]]
 ];

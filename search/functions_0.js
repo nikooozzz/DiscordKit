@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['appcommandhandler_118',['AppCommandHandler',['../d3/ddf/classDiscordKit_1_1Handlers_1_1AppCommandHandler.html#a0a836768bbe1ef62bc31b3d644820f6f',1,'DiscordKit::Handlers::AppCommandHandler']]]
+  ['appcommandhandler_120',['AppCommandHandler',['../d2/d16/classDiscordKit_1_1Events_1_1Handlers_1_1AppCommandHandler.html#afc04884722d27882449214ddb5a91914',1,'DiscordKit::Events::Handlers::AppCommandHandler']]]
 ];

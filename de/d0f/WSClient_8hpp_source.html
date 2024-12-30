@@ -212,7 +212,7 @@ $(function() {
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#aa8c2068cc8e8407f140a5390c52be10c">  162</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d61/classWSClient.html#aa8c2068cc8e8407f140a5390c52be10c">HandleMessage_</a>(<span class="keyword">const</span> nlohmann::json &amp;msg)</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        dispatcher_.handle(<a class="code" href="../../df/d2c/classDiscordKit_1_1Event.html">DiscordKit::Event</a>(msg));</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        dispatcher_.handle(DiscordKit::Event(msg));</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    };</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
 <div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a894dc5427ae7342260b9723c74a5939a">  168</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d9/d61/classWSClient.html#a894dc5427ae7342260b9723c74a5939a">HandleError_</a>(<span class="keyword">const</span> boost::system::error_code &amp;ec, <span class="keyword">const</span> std::string &amp;stage)</div>
@@ -277,14 +277,12 @@ $(function() {
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
 <div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#abe31668f2262e22533138eb5ef7c6de9">  230</a></span>&#160;    beast::flat_buffer <a class="code" href="../../d9/d61/classWSClient.html#abe31668f2262e22533138eb5ef7c6de9">buffer_</a>;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a1493ba7df0cf19504af1bddc32099432">  232</a></span>&#160;    <a class="code" href="../../dc/d03/classDispatcher.html">Dispatcher</a> <a class="code" href="../../d9/d61/classWSClient.html#a1493ba7df0cf19504af1bddc32099432">dispatcher_</a>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="../../d9/d61/classWSClient.html#a1493ba7df0cf19504af1bddc32099432">  232</a></span>&#160;    Dispatcher <a class="code" href="../../d9/d61/classWSClient.html#a1493ba7df0cf19504af1bddc32099432">dispatcher_</a>;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;};</div>
 <div class="ttc" id="aDispatcher_8hpp_html"><div class="ttname"><a href="../../d6/db9/Dispatcher_8hpp.html">Dispatcher.hpp</a></div></div>
 <div class="ttc" id="aMessageHandler_8hpp_html"><div class="ttname"><a href="../../d8/d08/MessageHandler_8hpp.html">MessageHandler.hpp</a></div></div>
 <div class="ttc" id="aOpcodes_8hpp_html"><div class="ttname"><a href="../../da/d9e/Opcodes_8hpp.html">Opcodes.hpp</a></div></div>
 <div class="ttc" id="aWSClient_8hpp_html_a4b2c0fd18b7d3d44cd0e91270fffaff1"><div class="ttname"><a href="../../de/d0f/WSClient_8hpp.html#a4b2c0fd18b7d3d44cd0e91270fffaff1">tcp</a></div><div class="ttdeci">asio::ip::tcp tcp</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:31</div></div>
-<div class="ttc" id="aclassDiscordKit_1_1Event_html"><div class="ttname"><a href="../../df/d2c/classDiscordKit_1_1Event.html">DiscordKit::Event</a></div><div class="ttdef"><b>Definition:</b> Event.hpp:14</div></div>
-<div class="ttc" id="aclassDispatcher_html"><div class="ttname"><a href="../../dc/d03/classDispatcher.html">Dispatcher</a></div><div class="ttdef"><b>Definition:</b> Dispatcher.hpp:18</div></div>
 <div class="ttc" id="aclassWSClient_html"><div class="ttname"><a href="../../d9/d61/classWSClient.html">WSClient</a></div><div class="ttdoc">This class handles a WebSocket connection.</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:41</div></div>
 <div class="ttc" id="aclassWSClient_html_a0277175cd66c9ca43f037b1f39780709"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a0277175cd66c9ca43f037b1f39780709">WSClient::ioc_</a></div><div class="ttdeci">asio::io_context ioc_</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:225</div></div>
 <div class="ttc" id="aclassWSClient_html_a0f1af1628e9ae1fed09e5c37d220fa87"><div class="ttname"><a href="../../d9/d61/classWSClient.html#a0f1af1628e9ae1fed09e5c37d220fa87">WSClient::WSClient</a></div><div class="ttdeci">WSClient(std::string token)</div><div class="ttdef"><b>Definition:</b> WSClient.hpp:43</div></div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['event_102',['Event',['../df/d2c/classDiscordKit_1_1Event.html',1,'DiscordKit']]]
+  ['event_103',['Event',['../d0/d16/classDiscordKit_1_1Events_1_1Event.html',1,'DiscordKit::Events']]]
 ];

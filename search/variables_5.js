@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_154',['name',['../df/d2c/classDiscordKit_1_1Event.html#a39de9049a9de95954aa921f136dbb573',1,'DiscordKit::Event']]]
+  ['name_156',['name',['../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a1e74724642d3e935bf5a89654b27a2f5',1,'DiscordKit::Events::Event']]]
 ];

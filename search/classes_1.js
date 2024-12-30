@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['discordconnection_99',['DiscordConnection',['../d6/d16/classDiscordConnection.html',1,'']]],
-  ['dispatcher_100',['Dispatcher',['../dc/d03/classDispatcher.html',1,'']]],
-  ['dispatcheventhandler_101',['DispatchEventHandler',['../d2/d2a/classDiscordKit_1_1Handlers_1_1DispatchEventHandler.html',1,'DiscordKit::Handlers']]]
+  ['discordconnection_100',['DiscordConnection',['../d8/d17/classDiscordKit_1_1DiscordConnection.html',1,'DiscordKit']]],
+  ['dispatcher_101',['Dispatcher',['../d8/d82/classDiscordKit_1_1Events_1_1Dispatcher.html',1,'DiscordKit::Events']]],
+  ['dispatcheventhandler_102',['DispatchEventHandler',['../dc/de4/classDiscordKit_1_1Events_1_1Handlers_1_1DispatchEventHandler.html',1,'DiscordKit::Events::Handlers']]]
 ];
