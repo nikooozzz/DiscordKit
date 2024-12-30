@@ -31,14 +31,15 @@ namespace asio		= boost::asio;
 using tcp			= asio::ip::tcp;
 namespace websocket = beast::websocket;
 
+namespace DiscordKit
+{
+
 /**
  * @brief This class handles a WebSocket connection
  *
  * It contains core methods for handling the websocket connection and adding callbacks to errors, connection calls and
  * message handling
  */
-namespace DiscordKit
-{
 	class WSClient
 	{
 	public:
