@@ -1,5 +1,6 @@
 var namespaceDiscordKit =
 [
+    [ "Commands", "d5/d70/namespaceDiscordKit_1_1Commands.html", "d5/d70/namespaceDiscordKit_1_1Commands" ],
     [ "Events", "df/dfe/namespaceDiscordKit_1_1Events.html", "df/dfe/namespaceDiscordKit_1_1Events" ],
     [ "DiscordConnection", "d8/d17/classDiscordKit_1_1DiscordConnection.html", "d8/d17/classDiscordKit_1_1DiscordConnection" ],
     [ "WSClient", "d1/d0c/classDiscordKit_1_1WSClient.html", "d1/d0c/classDiscordKit_1_1WSClient" ],

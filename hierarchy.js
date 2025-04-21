@@ -1,7 +1,9 @@
 var hierarchy =
 [
+    [ "DiscordKit::Commands::BasicModels", "d0/dd2/classDiscordKit_1_1Commands_1_1BasicModels.html", null ],
     [ "DiscordKit::DiscordConnection", "d8/d17/classDiscordKit_1_1DiscordConnection.html", null ],
     [ "DiscordKit::Events::Dispatcher", "d8/d82/classDiscordKit_1_1Events_1_1Dispatcher.html", null ],
+    [ "ErrorHandlers", "d1/d7f/classErrorHandlers.html", null ],
     [ "DiscordKit::Events::Event", "d0/d16/classDiscordKit_1_1Events_1_1Event.html", null ],
     [ "DiscordKit::Events::Handlers::GeneralHandler", "dc/dac/classDiscordKit_1_1Events_1_1Handlers_1_1GeneralHandler.html", [
       [ "DiscordKit::Events::Handlers::DispatchEventHandler", "dc/de4/classDiscordKit_1_1Events_1_1Handlers_1_1DispatchEventHandler.html", [
@@ -10,5 +12,6 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "DiscordKit::Commands::SlashCommand", "d0/d29/classDiscordKit_1_1Commands_1_1SlashCommand.html", null ],
     [ "DiscordKit::WSClient", "d1/d0c/classDiscordKit_1_1WSClient.html", null ]
 ];

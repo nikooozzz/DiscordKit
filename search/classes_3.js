@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['generalhandler_104',['GeneralHandler',['../dc/dac/classDiscordKit_1_1Events_1_1Handlers_1_1GeneralHandler.html',1,'DiscordKit::Events::Handlers']]]
+  ['errorhandlers_0',['ErrorHandlers',['../d1/d7f/classErrorHandlers.html',1,'']]],
+  ['event_1',['Event',['../d0/d16/classDiscordKit_1_1Events_1_1Event.html',1,'DiscordKit::Events']]]
 ];
