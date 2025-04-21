@@ -5,35 +5,35 @@
 #pragma once
 #include "Event.hpp"
 
+#include "DiscordKit/Commands/BasicModels.hpp"
+
 namespace DiscordKit::Events::Handlers
 {
-
-	class GeneralHandler
+	/** @brief Mapping tool for Dispatch Events (Opcode 0) and their callbacks
+	 *
+	 */
+	class DispatchEventHandler
 	{
 	public:
-		GeneralHandler();
+		bool handle(const Event &event) {
 
-		int handles_op;
+		};
+
+		void addHandler(const Commands::BasicCommand &command)
+		{
+			switch (command.type) {
+				case Commands::SlashCommand: slash_command_handlers[command.name] = command.callback; break;
+				case Commands::UserCommand: user_command_handlers[command.name] = command.callback; break;
+				case Commands::MessageCommand: message_command_handlers[command.name] = command.callback; break;
+				case Commands::ActivityCommand: activity_command_handlers[command.name] = command.callback; break;
+			}
+		};
+
+	private:
+		std::unordered_map<std::string, std::function<void()>> slash_command_handlers;
+		std::unordered_map<std::string, std::function<void()>> user_command_handlers;
+		std::unordered_map<std::string, std::function<void()>> message_command_handlers;
+		std::unordered_map<std::string, std::function<void()>> activity_command_handlers;
 	};
 
-	class DispatchEventHandler : public GeneralHandler
-	{
-	public:
-		DispatchEventHandler();
-
-		int handles_op = 0;
-	};
-
-	class AppCommandHandler : public DispatchEventHandler
-	{
-	public:
-		AppCommandHandler();
-	};
-
-	class SlashCommandHandler : public AppCommandHandler
-	{
-	public:
-		std::unordered_map<std::string, std::function<void()>> handlers;
-	};
-
-}
+}; // namespace DiscordKit::Events::Handlers

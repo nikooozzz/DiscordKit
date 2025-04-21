@@ -9,11 +9,14 @@
 
 namespace DiscordKit::Events
 {
-
+	/** @brief Model class for the discord gateway event payload structure
+	 *
+	 */
 	class Event
 	{
 	public:
-		explicit Event(const nlohmann::json &json) : opcode(json["op"]), data(json["d"]), seq(json["s"]), name(json["t"]) {};
+		explicit Event(const nlohmann::json &json) :
+			opcode(json["op"]), data(json["d"]), seq(json["s"]), name(json["t"]) {};
 
 		int opcode;
 		nlohmann::json data;

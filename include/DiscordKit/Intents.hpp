@@ -6,7 +6,9 @@
 
 #include <bitset>
 
-enum class Intents : uint64_t {
+namespace DiscordKit
+{
+	enum class Intents : uint64_t {
 		GUILD_MESSAGES = 1 << 0,       // Guild messages
 		DIRECT_MESSAGES = 1 << 1,     // Direct messages
 		GUILD_MEMBERS = 1 << 2,       // Guild member events
@@ -20,19 +22,19 @@ enum class Intents : uint64_t {
 		ALL = 0xFFFFFFFFFFFFFFFF
 	};
 
-inline Intents operator|(Intents lhs, Intents rhs) {
+	inline Intents operator|(Intents lhs, Intents rhs) {
 		return static_cast<Intents>(
 			static_cast<uint64_t>(lhs) | static_cast<uint64_t>(rhs));
 	}
 
-// Check for specific intents using bitwise AND
-inline bool operator&(Intents lhs, Intents rhs) {
+	// Check for specific intents using bitwise AND
+	inline bool operator&(Intents lhs, Intents rhs) {
 		return static_cast<uint64_t>(lhs) & static_cast<uint64_t>(rhs);
-}
+	}
 
-// Allow combining intents into a single bitmask
-inline Intents& operator|=(Intents& lhs, Intents rhs) {
+	// Allow combining intents into a single bitmask
+	inline Intents& operator|=(Intents& lhs, const Intents& rhs) {
 		lhs = lhs | rhs;
 		return lhs;
+	}
 }
-

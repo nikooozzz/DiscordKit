@@ -2,17 +2,19 @@
 // Created by Nikolai Käck on 2024-12-31.
 //
 
-#ifndef SLASHCOMMAND_HPP
-#define SLASHCOMMAND_HPP
+#pragma once
+#include <functional>
+#include <string>
 
-namespace DiscordKit {
-namespace Commands {
+#include "DiscordKit/Commands/BasicModels.hpp"
 
-class SlashCommand {
+namespace DiscordKit::Commands
+{
 
-};
+	class SlashCommand : public BasicCommand
+	{
+	public:
+		const AppCommandType type = AppCommandType::SlashCommand;
+	};
 
-} // Commands
-} // DiscordKit
-
-#endif //SLASHCOMMAND_HPP
+} // namespace DiscordKit::Commands

@@ -25,6 +25,7 @@
 #include "DiscordKit/MessageHandler.hpp"
 #include "DiscordKit/MessageHandler/Dispatcher.hpp"
 #include "DiscordKit/MessageHandler/Opcodes.hpp"
+#include "DiscordKit/Commands/SlashCommand.hpp"
 
 namespace beast		= boost::beast;
 namespace asio		= boost::asio;
@@ -44,7 +45,7 @@ namespace DiscordKit
 	{
 	public:
 		explicit WSClient(std::string token) :
-			token_(std::move(token)), gateway_url_(fetchGatewayURL_()), ioc_(),
+			token_(std::move(token)), gateway_url_(fetchGatewayURL_()),
 			ssl_ctx_(asio::ssl::context::tlsv12_client), resolver_(ioc_), ws_(ioc_, ssl_ctx_)
 		{
 			ssl_ctx_.set_default_verify_paths();
@@ -160,12 +161,17 @@ namespace DiscordKit
 		/** @brief Sets the callback function for error events. */
 		void SetOnError();
 
+		void RegisterCommand(const DiscordKit::Commands::BasicCommand& cmd)
+		{
+			dispatcher_.RegisterCommand(cmd);
+		};
+
 
 	private:
 		/** @brief Callback function for incoming websocket messages. */
 		void HandleMessage_(const nlohmann::json &msg)
 		{
-			dispatcher_.handle(DiscordKit::Events::Event(msg));
+			dispatcher_.handle(Events::Event(msg));
 		};
 
 		/** @brief Handles errors during WebSocket communication. */

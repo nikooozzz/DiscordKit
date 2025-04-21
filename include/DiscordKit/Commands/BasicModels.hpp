@@ -4,12 +4,37 @@
 
 #pragma once
 
-namespace DiscordKit {
-namespace Commands {
+namespace DiscordKit::Commands
+{
 
-class BasicModels {
+	enum AppCommandType
+	{
+		SlashCommand,
+		UserCommand,
+		MessageCommand,
+		ActivityCommand
+	};
 
-};
+	class BasicCommand
+	{
+	public:
+		BasicCommand(const AppCommandType &type,
+					 std::string name,
+					 std::string description,
+					 std::function<void()> callback) : type(type)
+		{
+			switch (type) {
+				case SlashCommand: return SlashCommand(name, description, callback);
+				case MessageCommand: return MessageCommand(name, description, callback);
+				case ActivityCommand: return ActivityCommand(name, description, callback);
+				case UserCommand: return UserCommand(name, description, callback);
+			}
+		}
 
-} // Commands
-} // DiscordKit
+		const AppCommandType type;
+		std::string name;
+		std::string description;
+		std::function<void()> callback;
+	};
+
+}
