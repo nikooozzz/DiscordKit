@@ -24,42 +24,12 @@
 */
 var NAVTREE =
 [
-  [ "DiscordKit", "index.html", [
-    [ "Features", "index.html#autotoc_md1", null ],
-    [ "Building", "index.html#autotoc_md2", null ],
-    [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
-      ] ]
-    ] ],
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
-      ] ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Typedefs", "globals_type.html", null ]
-      ] ]
-    ] ]
-  ] ]
+  [ "discordium", "index.html", ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"da/d9e/Opcodes_8hpp.html#a7064057207fe21dc8009463af15758adaad9062590fcbbb2510a87182fdf12215"
+"index.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
