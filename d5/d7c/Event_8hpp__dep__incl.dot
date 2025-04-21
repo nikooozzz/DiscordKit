@@ -17,7 +17,10 @@ digraph "include/DiscordKit/MessageHandler/Event.hpp"
   Node6 [id="Node000006",label="include/DiscordKit\l/DiscordKit.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/dec/DiscordKit_8hpp.html",tooltip=" "];
   Node2 -> Node4 [id="edge6_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node7 [id="edge7_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="include/DiscordKit\l/MessageHandler/Handler.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/ddd/Handler_8hpp.html",tooltip=" "];
-  Node7 -> Node3 [id="edge8_Node000007_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node7 -> Node2 [id="edge9_Node000007_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="include/DiscordKit\l/MessageHandler/ErrorHandlers.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/de2/ErrorHandlers_8hpp.html",tooltip=" "];
+  Node7 -> Node2 [id="edge8_Node000007_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node8 [id="edge9_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="include/DiscordKit\l/MessageHandler/Handler.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/ddd/Handler_8hpp.html",tooltip=" "];
+  Node8 -> Node3 [id="edge10_Node000008_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 -> Node2 [id="edge11_Node000008_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

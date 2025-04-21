@@ -10,8 +10,8 @@ var searchData=
   ['setonerror_7',['SetOnError',['../d1/d0c/classDiscordKit_1_1WSClient.html#a0981841a14d009ff286026ff34884f99',1,'DiscordKit::WSClient']]],
   ['shard_5finvalid_8',['SHARD_INVALID',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ada2051c41cd3087578c8909ba9792ea987',1,'DiscordKit']]],
   ['shard_5frequired_9',['SHARD_REQUIRED',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758adab86f8134c819dcff8d20d7aafeeaf24e',1,'DiscordKit']]],
-  ['slashcommand_10',['SlashCommand',['../d0/d29/classDiscordKit_1_1Commands_1_1SlashCommand.html',1,'DiscordKit::Commands']]],
-  ['slashcommand_2ehpp_11',['SlashCommand.hpp',['../d6/d79/SlashCommand_8hpp.html',1,'']]],
-  ['slashcommandhandler_12',['SlashCommandHandler',['../d5/df2/classDiscordKit_1_1Events_1_1Handlers_1_1SlashCommandHandler.html',1,'DiscordKit::Events::Handlers']]],
+  ['slash_5fcommand_5fhandlers_10',['slash_command_handlers',['../dc/de4/classDiscordKit_1_1Events_1_1Handlers_1_1DispatchEventHandler.html#ae79b0fd4da29d7d27b428e2ae1436b24',1,'DiscordKit::Events::Handlers::DispatchEventHandler']]],
+  ['slashcommand_11',['slashcommand',['../d0/d29/classDiscordKit_1_1Commands_1_1SlashCommand.html',1,'DiscordKit::Commands::SlashCommand'],['../d8/d17/classDiscordKit_1_1DiscordConnection.html#a89b922e4c4d1f09e36946b42f3facaf9',1,'DiscordKit::DiscordConnection::SlashCommand()'],['../d5/d70/namespaceDiscordKit_1_1Commands.html#a84d3956df3efc5ce3bd3aeec32895695a32c6ac7b46e3b436349bd31191e3aa9b',1,'DiscordKit::Commands::SlashCommand']]],
+  ['slashcommand_2ehpp_12',['SlashCommand.hpp',['../d6/d79/SlashCommand_8hpp.html',1,'']]],
   ['ssl_5fctx_5f_13',['ssl_ctx_',['../d1/d0c/classDiscordKit_1_1WSClient.html#aa6185ba4ddccd8c532283795cf47c510',1,'DiscordKit::WSClient']]]
 ];

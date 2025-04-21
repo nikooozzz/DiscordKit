@@ -9,6 +9,7 @@ var classDiscordKit_1_1WSClient =
     [ "IsConnected", "d1/d0c/classDiscordKit_1_1WSClient.html#af11cc428594c9102664a4ec95992053a", null ],
     [ "ReadLoop", "d1/d0c/classDiscordKit_1_1WSClient.html#a3b42c3016ac2bc8c29db8c18fca6e85c", null ],
     [ "Reconnect", "d1/d0c/classDiscordKit_1_1WSClient.html#a93e2ce08ff154545e65c0c4690a9452b", null ],
+    [ "RegisterCommand", "d1/d0c/classDiscordKit_1_1WSClient.html#a1de8af76fc52d1538e8260525528eea9", null ],
     [ "SendIdentity", "d1/d0c/classDiscordKit_1_1WSClient.html#af8a9313c1efe5e9c9f07f3c4d0b379b6", null ],
     [ "SendMessage", "d1/d0c/classDiscordKit_1_1WSClient.html#ababa625d81b9b88b4f4710db9666ac8e", null ],
     [ "setGatewayURL_", "d1/d0c/classDiscordKit_1_1WSClient.html#a3b03a100986a3f6593e46c78fa765746", null ],

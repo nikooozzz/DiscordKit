@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['sendidentity_0',['SendIdentity',['../d1/d0c/classDiscordKit_1_1WSClient.html#af8a9313c1efe5e9c9f07f3c4d0b379b6',1,'DiscordKit::WSClient']]],
-  ['sendmessage_1',['SendMessage',['../d1/d0c/classDiscordKit_1_1WSClient.html#ababa625d81b9b88b4f4710db9666ac8e',1,'DiscordKit::WSClient']]],
-  ['setgatewayurl_5f_2',['setGatewayURL_',['../d1/d0c/classDiscordKit_1_1WSClient.html#a3b03a100986a3f6593e46c78fa765746',1,'DiscordKit::WSClient']]],
-  ['setonconnect_3',['SetOnConnect',['../d1/d0c/classDiscordKit_1_1WSClient.html#aa6c86d3e0c7ca8d491d54d26bd6f822f',1,'DiscordKit::WSClient']]],
-  ['setondisconnect_4',['SetOnDisconnect',['../d1/d0c/classDiscordKit_1_1WSClient.html#a5e347c9460c88047ea8bfb77b89a8968',1,'DiscordKit::WSClient']]],
-  ['setonerror_5',['SetOnError',['../d1/d0c/classDiscordKit_1_1WSClient.html#a0981841a14d009ff286026ff34884f99',1,'DiscordKit::WSClient']]]
+  ['readloop_0',['ReadLoop',['../d1/d0c/classDiscordKit_1_1WSClient.html#a3b42c3016ac2bc8c29db8c18fca6e85c',1,'DiscordKit::WSClient']]],
+  ['reconnect_1',['Reconnect',['../d1/d0c/classDiscordKit_1_1WSClient.html#a93e2ce08ff154545e65c0c4690a9452b',1,'DiscordKit::WSClient']]],
+  ['registercommand_2',['registercommand',['../d8/d82/classDiscordKit_1_1Events_1_1Dispatcher.html#ad97f5db7fd9902918abbccb0bb61e239',1,'DiscordKit::Events::Dispatcher::RegisterCommand()'],['../d1/d0c/classDiscordKit_1_1WSClient.html#a1de8af76fc52d1538e8260525528eea9',1,'DiscordKit::WSClient::RegisterCommand()']]],
+  ['run_3',['run',['../d8/d17/classDiscordKit_1_1DiscordConnection.html#a000a12dffbb6b3045bb662c831278c53',1,'DiscordKit::DiscordConnection']]],
+  ['runclosehandler_4',['runCloseHandler',['../d8/d82/classDiscordKit_1_1Events_1_1Dispatcher.html#a1f1442f0a3390cbe4fa4d84f1ed9b53f',1,'DiscordKit::Events::Dispatcher']]],
+  ['runnormalhandler_5',['runNormalHandler',['../d8/d82/classDiscordKit_1_1Events_1_1Dispatcher.html#a23cb59b8d7371d35eea3c254104ffbac',1,'DiscordKit::Events::Dispatcher']]]
 ];

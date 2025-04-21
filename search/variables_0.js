@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['buffer_5f_0',['buffer_',['../d1/d0c/classDiscordKit_1_1WSClient.html#a8a0c2c3fc8093b155578fe037fdd5308',1,'DiscordKit::WSClient']]]
+  ['activity_5fcommand_5fhandlers_0',['activity_command_handlers',['../dc/de4/classDiscordKit_1_1Events_1_1Handlers_1_1DispatchEventHandler.html#a48269bf8ac9e78320105887e50f3a179',1,'DiscordKit::Events::Handlers::DispatchEventHandler']]]
 ];

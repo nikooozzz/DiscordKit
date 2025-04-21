@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('d0/d16/classDiscordKit_1_1Events_1_1Ev
 </div><!--header-->
 <div class="contents">
 
+<p>Model class for the discord gateway event payload structure.  
+ <a href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../df/d7d/Event_8hpp_source.html">Event.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -116,7 +119,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1e74724642d3e935bf5a89654b27a2f5" id="r_a1e74724642d3e935bf5a89654b27a2f5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a1e74724642d3e935bf5a89654b27a2f5">name</a></td></tr>
 <tr class="separator:a1e74724642d3e935bf5a89654b27a2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Model class for the discord gateway event payload structure. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9eca85de66c9cf2828ab4ab4892609c7" name="a9eca85de66c9cf2828ab4ab4892609c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9eca85de66c9cf2828ab4ab4892609c7">&#9670;&#160;</a></span>Event()</h2>
 
@@ -140,11 +145,12 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   16</span>: <a class="code hl_variable" href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#af096f1357a58770e5ed677bb967d01b1">opcode</a>(json[<span class="stringliteral">&quot;op&quot;</span>]), <a class="code hl_variable" href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a26da07144da0500d3c0ce0049d3e9941">data</a>(json[<span class="stringliteral">&quot;d&quot;</span>]), <a class="code hl_variable" href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a8011b91e773d10d25245f20720e3ce1d">seq</a>(json[<span class="stringliteral">&quot;s&quot;</span>]), <a class="code hl_variable" href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a1e74724642d3e935bf5a89654b27a2f5">name</a>(json[<span class="stringliteral">&quot;t&quot;</span>]) {};</div>
-<div class="ttc" id="aclassDiscordKit_1_1Events_1_1Event_html_a1e74724642d3e935bf5a89654b27a2f5"><div class="ttname"><a href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a1e74724642d3e935bf5a89654b27a2f5">DiscordKit::Events::Event::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> Event.hpp:21</div></div>
-<div class="ttc" id="aclassDiscordKit_1_1Events_1_1Event_html_a26da07144da0500d3c0ce0049d3e9941"><div class="ttname"><a href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a26da07144da0500d3c0ce0049d3e9941">DiscordKit::Events::Event::data</a></div><div class="ttdeci">nlohmann::json data</div><div class="ttdef"><b>Definition</b> Event.hpp:19</div></div>
-<div class="ttc" id="aclassDiscordKit_1_1Events_1_1Event_html_a8011b91e773d10d25245f20720e3ce1d"><div class="ttname"><a href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a8011b91e773d10d25245f20720e3ce1d">DiscordKit::Events::Event::seq</a></div><div class="ttdeci">int seq</div><div class="ttdef"><b>Definition</b> Event.hpp:20</div></div>
-<div class="ttc" id="aclassDiscordKit_1_1Events_1_1Event_html_af096f1357a58770e5ed677bb967d01b1"><div class="ttname"><a href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#af096f1357a58770e5ed677bb967d01b1">DiscordKit::Events::Event::opcode</a></div><div class="ttdeci">int opcode</div><div class="ttdef"><b>Definition</b> Event.hpp:18</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>                                                 :</div>
+<div class="line"><span class="lineno">   19</span>            <a class="code hl_variable" href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#af096f1357a58770e5ed677bb967d01b1">opcode</a>(json[<span class="stringliteral">&quot;op&quot;</span>]), <a class="code hl_variable" href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a26da07144da0500d3c0ce0049d3e9941">data</a>(json[<span class="stringliteral">&quot;d&quot;</span>]), <a class="code hl_variable" href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a8011b91e773d10d25245f20720e3ce1d">seq</a>(json[<span class="stringliteral">&quot;s&quot;</span>]), <a class="code hl_variable" href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a1e74724642d3e935bf5a89654b27a2f5">name</a>(json[<span class="stringliteral">&quot;t&quot;</span>]) {};</div>
+<div class="ttc" id="aclassDiscordKit_1_1Events_1_1Event_html_a1e74724642d3e935bf5a89654b27a2f5"><div class="ttname"><a href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a1e74724642d3e935bf5a89654b27a2f5">DiscordKit::Events::Event::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> Event.hpp:24</div></div>
+<div class="ttc" id="aclassDiscordKit_1_1Events_1_1Event_html_a26da07144da0500d3c0ce0049d3e9941"><div class="ttname"><a href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a26da07144da0500d3c0ce0049d3e9941">DiscordKit::Events::Event::data</a></div><div class="ttdeci">nlohmann::json data</div><div class="ttdef"><b>Definition</b> Event.hpp:22</div></div>
+<div class="ttc" id="aclassDiscordKit_1_1Events_1_1Event_html_a8011b91e773d10d25245f20720e3ce1d"><div class="ttname"><a href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a8011b91e773d10d25245f20720e3ce1d">DiscordKit::Events::Event::seq</a></div><div class="ttdeci">int seq</div><div class="ttdef"><b>Definition</b> Event.hpp:23</div></div>
+<div class="ttc" id="aclassDiscordKit_1_1Events_1_1Event_html_af096f1357a58770e5ed677bb967d01b1"><div class="ttname"><a href="../../d0/d16/classDiscordKit_1_1Events_1_1Event.html#af096f1357a58770e5ed677bb967d01b1">DiscordKit::Events::Event::opcode</a></div><div class="ttdeci">int opcode</div><div class="ttdef"><b>Definition</b> Event.hpp:21</div></div>
 </div><!-- fragment -->
 </div>
 </div>

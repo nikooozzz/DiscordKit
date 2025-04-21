@@ -7,6 +7,8 @@ digraph "include/DiscordKit/MessageHandler"
   compound=true
   subgraph clusterdir_3b82544024519ceaefbf0b385db19546 {
     graph [ bgcolor="#edf0f7", pencolor="grey50", label="DiscordKit", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_3b82544024519ceaefbf0b385db19546.html",tooltip=""]
+  dir_ab9d12e561805b90db0e77e1a434f118 [label="Commands", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_ab9d12e561805b90db0e77e1a434f118.html",tooltip=""];
   dir_297590b3aabe4e3103bdc9d227d18785 [label="MessageHandler", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_297590b3aabe4e3103bdc9d227d18785.html",tooltip=""];
   }
+  dir_297590b3aabe4e3103bdc9d227d18785->dir_ab9d12e561805b90db0e77e1a434f118 [headlabel="1", labeldistance=1.5 headhref="dir_000003_000000.html" href="dir_000003_000000.html" color="steelblue1" fontcolor="steelblue1"];
 }

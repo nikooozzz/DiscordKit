@@ -98,23 +98,44 @@ $(document).ready(function(){initNavTree('d8/d17/classDiscordKit_1_1DiscordConne
 </div><!--header-->
 <div class="contents">
 
+<p>Main API abstraction for an average user.  
+ <a href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../da/d52/DiscordConnection_8hpp_source.html">DiscordConnection.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for DiscordKit::DiscordConnection:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/dfb/classDiscordKit_1_1DiscordConnection__coll__graph.png" border="0" usemap="#aDiscordKit_1_1DiscordConnection_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a625dab4e0896a9aa138d1cb364450629" id="r_a625dab4e0896a9aa138d1cb364450629"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#a625dab4e0896a9aa138d1cb364450629">DiscordConnection</a> (const utils::Intents &amp;<a class="el" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#abe6e580a0f2d92ed4176cc9a2df43ce3">intents</a>)</td></tr>
-<tr class="separator:a625dab4e0896a9aa138d1cb364450629"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d35282abc3be9df7c9640e6c72155c4" id="r_a2d35282abc3be9df7c9640e6c72155c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#a2d35282abc3be9df7c9640e6c72155c4">run</a> (const std::string &amp;token)</td></tr>
-<tr class="separator:a2d35282abc3be9df7c9640e6c72155c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab429037084edd9b3f4d487816ef0ae72" id="r_ab429037084edd9b3f4d487816ef0ae72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#ab429037084edd9b3f4d487816ef0ae72">DiscordConnection</a> (const <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#ae1225572a4d6af4b91b26a25feaadf8e">Intents</a> &amp;intents, const std::string &amp;token)</td></tr>
+<tr class="separator:ab429037084edd9b3f4d487816ef0ae72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000a12dffbb6b3045bb662c831278c53" id="r_a000a12dffbb6b3045bb662c831278c53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#a000a12dffbb6b3045bb662c831278c53">run</a> ()</td></tr>
+<tr class="separator:a000a12dffbb6b3045bb662c831278c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b922e4c4d1f09e36946b42f3facaf9" id="r_a89b922e4c4d1f09e36946b42f3facaf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#a89b922e4c4d1f09e36946b42f3facaf9">SlashCommand</a> (const std::string &amp;name, const std::string &amp;description, const std::function&lt; void()&gt; &amp;handler)</td></tr>
+<tr class="separator:a89b922e4c4d1f09e36946b42f3facaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4398ff98302d912d5b293d91a034439b" id="r_a4398ff98302d912d5b293d91a034439b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#a4398ff98302d912d5b293d91a034439b">UserCommand</a> (const std::string &amp;name, const std::string &amp;description, const std::function&lt; void()&gt; &amp;handler)</td></tr>
+<tr class="separator:a4398ff98302d912d5b293d91a034439b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb148a3124401c927f653567a9c01aa" id="r_a2cb148a3124401c927f653567a9c01aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#a2cb148a3124401c927f653567a9c01aa">MessageCommand</a> (const std::string &amp;name, const std::string &amp;description, const std::function&lt; void()&gt; &amp;handler)</td></tr>
+<tr class="separator:a2cb148a3124401c927f653567a9c01aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f9a2982066e52e55f786d8fec50073b" id="r_a7f9a2982066e52e55f786d8fec50073b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#a7f9a2982066e52e55f786d8fec50073b">ActivityCommand</a> (const std::string &amp;name, const std::string &amp;description, const std::function&lt; void()&gt; &amp;handler)</td></tr>
+<tr class="separator:a7f9a2982066e52e55f786d8fec50073b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:abe6e580a0f2d92ed4176cc9a2df43ce3" id="r_abe6e580a0f2d92ed4176cc9a2df43ce3"><td class="memItemLeft" align="right" valign="top">utils::Intents&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#abe6e580a0f2d92ed4176cc9a2df43ce3">intents</a></td></tr>
-<tr class="separator:abe6e580a0f2d92ed4176cc9a2df43ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff773c72a7b16bf5b516c92b0113b3a9" id="r_aff773c72a7b16bf5b516c92b0113b3a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/dc7/namespaceDiscordKit.html#ae1225572a4d6af4b91b26a25feaadf8e">Intents</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#aff773c72a7b16bf5b516c92b0113b3a9">intents_</a></td></tr>
+<tr class="separator:aff773c72a7b16bf5b516c92b0113b3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3a2942b55115e1835d3f221198d96a" id="r_afc3a2942b55115e1835d3f221198d96a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d0c/classDiscordKit_1_1WSClient.html">WSClient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#afc3a2942b55115e1835d3f221198d96a">ws_</a></td></tr>
+<tr class="separator:afc3a2942b55115e1835d3f221198d96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a625dab4e0896a9aa138d1cb364450629" name="a625dab4e0896a9aa138d1cb364450629"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a625dab4e0896a9aa138d1cb364450629">&#9670;&#160;</a></span>DiscordConnection()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Main API abstraction for an average user. </p>
+<p>Handles a "DiscordConnection" object, allowing the library user to run a bot and add commands to it. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab429037084edd9b3f4d487816ef0ae72" name="ab429037084edd9b3f4d487816ef0ae72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab429037084edd9b3f4d487816ef0ae72">&#9670;&#160;</a></span>DiscordConnection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,9 +146,19 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">DiscordKit::DiscordConnection::DiscordConnection </td>
           <td>(</td>
-          <td class="paramtype">const utils::Intents &amp;&#160;</td>
-          <td class="paramname"><em>intents</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#ae1225572a4d6af4b91b26a25feaadf8e">Intents</a> &amp;&#160;</td>
+          <td class="paramname"><em>intents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>token</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -136,14 +167,118 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   17</span>: <a class="code hl_variable" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#abe6e580a0f2d92ed4176cc9a2df43ce3">intents</a>(<a class="code hl_variable" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#abe6e580a0f2d92ed4176cc9a2df43ce3">intents</a>) {};</div>
-<div class="ttc" id="aclassDiscordKit_1_1DiscordConnection_html_abe6e580a0f2d92ed4176cc9a2df43ce3"><div class="ttname"><a href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#abe6e580a0f2d92ed4176cc9a2df43ce3">DiscordKit::DiscordConnection::intents</a></div><div class="ttdeci">utils::Intents intents</div><div class="ttdef"><b>Definition</b> DiscordConnection.hpp:15</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>: <a class="code hl_variable" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#aff773c72a7b16bf5b516c92b0113b3a9">intents_</a>(intents), <a class="code hl_variable" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#afc3a2942b55115e1835d3f221198d96a">ws_</a>(token) {};</div>
+<div class="ttc" id="aclassDiscordKit_1_1DiscordConnection_html_afc3a2942b55115e1835d3f221198d96a"><div class="ttname"><a href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#afc3a2942b55115e1835d3f221198d96a">DiscordKit::DiscordConnection::ws_</a></div><div class="ttdeci">WSClient ws_</div><div class="ttdef"><b>Definition</b> DiscordConnection.hpp:59</div></div>
+<div class="ttc" id="aclassDiscordKit_1_1DiscordConnection_html_aff773c72a7b16bf5b516c92b0113b3a9"><div class="ttname"><a href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#aff773c72a7b16bf5b516c92b0113b3a9">DiscordKit::DiscordConnection::intents_</a></div><div class="ttdeci">Intents intents_</div><div class="ttdef"><b>Definition</b> DiscordConnection.hpp:58</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2d35282abc3be9df7c9640e6c72155c4" name="a2d35282abc3be9df7c9640e6c72155c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d35282abc3be9df7c9640e6c72155c4">&#9670;&#160;</a></span>run()</h2>
+<a id="a7f9a2982066e52e55f786d8fec50073b" name="a7f9a2982066e52e55f786d8fec50073b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f9a2982066e52e55f786d8fec50073b">&#9670;&#160;</a></span>ActivityCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DiscordKit::DiscordConnection::ActivityCommand </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void()&gt; &amp;&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   52</span>        {</div>
+<div class="line"><span class="lineno">   53</span>            <a class="code hl_variable" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#afc3a2942b55115e1835d3f221198d96a">ws_</a>.<a class="code hl_function" href="../../d1/d0c/classDiscordKit_1_1WSClient.html#a1de8af76fc52d1538e8260525528eea9">RegisterCommand</a>(Commands::BasicCommand(<a class="code hl_enumvalue" href="../../d5/d70/namespaceDiscordKit_1_1Commands.html#a84d3956df3efc5ce3bd3aeec32895695a978ab1a083b818d8a0a13a831872da4c">Commands::AppCommandType::ActivityCommand</a>, name, description, handler));</div>
+<div class="line"><span class="lineno">   54</span>        }</div>
+<div class="ttc" id="aclassDiscordKit_1_1WSClient_html_a1de8af76fc52d1538e8260525528eea9"><div class="ttname"><a href="../../d1/d0c/classDiscordKit_1_1WSClient.html#a1de8af76fc52d1538e8260525528eea9">DiscordKit::WSClient::RegisterCommand</a></div><div class="ttdeci">void RegisterCommand(const DiscordKit::Commands::BasicCommand &amp;cmd)</div><div class="ttdef"><b>Definition</b> WSClient.hpp:164</div></div>
+<div class="ttc" id="anamespaceDiscordKit_1_1Commands_html_a84d3956df3efc5ce3bd3aeec32895695a978ab1a083b818d8a0a13a831872da4c"><div class="ttname"><a href="../../d5/d70/namespaceDiscordKit_1_1Commands.html#a84d3956df3efc5ce3bd3aeec32895695a978ab1a083b818d8a0a13a831872da4c">DiscordKit::Commands::ActivityCommand</a></div><div class="ttdeci">@ ActivityCommand</div><div class="ttdef"><b>Definition</b> BasicModels.hpp:15</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d17/classDiscordKit_1_1DiscordConnection_a7f9a2982066e52e55f786d8fec50073b_cgraph.png" border="0" usemap="#ad8/d17/classDiscordKit_1_1DiscordConnection_a7f9a2982066e52e55f786d8fec50073b_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a2cb148a3124401c927f653567a9c01aa" name="a2cb148a3124401c927f653567a9c01aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb148a3124401c927f653567a9c01aa">&#9670;&#160;</a></span>MessageCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DiscordKit::DiscordConnection::MessageCommand </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void()&gt; &amp;&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   45</span>        {</div>
+<div class="line"><span class="lineno">   46</span>            <a class="code hl_variable" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#afc3a2942b55115e1835d3f221198d96a">ws_</a>.<a class="code hl_function" href="../../d1/d0c/classDiscordKit_1_1WSClient.html#a1de8af76fc52d1538e8260525528eea9">RegisterCommand</a>(Commands::BasicCommand(<a class="code hl_enumvalue" href="../../d5/d70/namespaceDiscordKit_1_1Commands.html#a84d3956df3efc5ce3bd3aeec32895695ab166ab6c6da8fa086267d468946c7c6d">Commands::AppCommandType::MessageCommand</a>, name, description, handler));</div>
+<div class="line"><span class="lineno">   47</span>        }</div>
+<div class="ttc" id="anamespaceDiscordKit_1_1Commands_html_a84d3956df3efc5ce3bd3aeec32895695ab166ab6c6da8fa086267d468946c7c6d"><div class="ttname"><a href="../../d5/d70/namespaceDiscordKit_1_1Commands.html#a84d3956df3efc5ce3bd3aeec32895695ab166ab6c6da8fa086267d468946c7c6d">DiscordKit::Commands::MessageCommand</a></div><div class="ttdeci">@ MessageCommand</div><div class="ttdef"><b>Definition</b> BasicModels.hpp:14</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d17/classDiscordKit_1_1DiscordConnection_a2cb148a3124401c927f653567a9c01aa_cgraph.png" border="0" usemap="#ad8/d17/classDiscordKit_1_1DiscordConnection_a2cb148a3124401c927f653567a9c01aa_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a000a12dffbb6b3045bb662c831278c53" name="a000a12dffbb6b3045bb662c831278c53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a000a12dffbb6b3045bb662c831278c53">&#9670;&#160;</a></span>run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,8 +289,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void DiscordKit::DiscordConnection::run </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>token</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -165,16 +299,20 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   20</span>        {</div>
-<div class="line"><span class="lineno">   21</span>            WSClient ws{token};</div>
-<div class="line"><span class="lineno">   22</span>            ws.connect();</div>
-<div class="line"><span class="lineno">   23</span>        };</div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   24</span>        {</div>
+<div class="line"><span class="lineno">   25</span>            <a class="code hl_variable" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#afc3a2942b55115e1835d3f221198d96a">ws_</a>.<a class="code hl_function" href="../../d1/d0c/classDiscordKit_1_1WSClient.html#aecec7fe8645d9a739badd0d13378ca04">Connect</a>();</div>
+<div class="line"><span class="lineno">   26</span>        };</div>
+<div class="ttc" id="aclassDiscordKit_1_1WSClient_html_aecec7fe8645d9a739badd0d13378ca04"><div class="ttname"><a href="../../d1/d0c/classDiscordKit_1_1WSClient.html#aecec7fe8645d9a739badd0d13378ca04">DiscordKit::WSClient::Connect</a></div><div class="ttdeci">void Connect(bool isReconnect=false)</div><div class="ttdoc">Connects to the WebSocket server asynchronously.</div><div class="ttdef"><b>Definition</b> WSClient.hpp:55</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d17/classDiscordKit_1_1DiscordConnection_a000a12dffbb6b3045bb662c831278c53_cgraph.png" border="0" usemap="#ad8/d17/classDiscordKit_1_1DiscordConnection_a000a12dffbb6b3045bb662c831278c53_cgraph" alt=""/></div>
+</div>
+
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="abe6e580a0f2d92ed4176cc9a2df43ce3" name="abe6e580a0f2d92ed4176cc9a2df43ce3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe6e580a0f2d92ed4176cc9a2df43ce3">&#9670;&#160;</a></span>intents</h2>
+<a id="a89b922e4c4d1f09e36946b42f3facaf9" name="a89b922e4c4d1f09e36946b42f3facaf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b922e4c4d1f09e36946b42f3facaf9">&#9670;&#160;</a></span>SlashCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,7 +321,132 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">utils::Intents DiscordKit::DiscordConnection::intents</td>
+          <td class="memname">void DiscordKit::DiscordConnection::SlashCommand </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void()&gt; &amp;&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   31</span>        {</div>
+<div class="line"><span class="lineno">   32</span>            <a class="code hl_variable" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#afc3a2942b55115e1835d3f221198d96a">ws_</a>.<a class="code hl_function" href="../../d1/d0c/classDiscordKit_1_1WSClient.html#a1de8af76fc52d1538e8260525528eea9">RegisterCommand</a>(Commands::BasicCommand(<a class="code hl_enumvalue" href="../../d5/d70/namespaceDiscordKit_1_1Commands.html#a84d3956df3efc5ce3bd3aeec32895695a32c6ac7b46e3b436349bd31191e3aa9b">Commands::AppCommandType::SlashCommand</a>, name, description, handler));</div>
+<div class="line"><span class="lineno">   33</span>        };</div>
+<div class="ttc" id="anamespaceDiscordKit_1_1Commands_html_a84d3956df3efc5ce3bd3aeec32895695a32c6ac7b46e3b436349bd31191e3aa9b"><div class="ttname"><a href="../../d5/d70/namespaceDiscordKit_1_1Commands.html#a84d3956df3efc5ce3bd3aeec32895695a32c6ac7b46e3b436349bd31191e3aa9b">DiscordKit::Commands::SlashCommand</a></div><div class="ttdeci">@ SlashCommand</div><div class="ttdef"><b>Definition</b> BasicModels.hpp:12</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d17/classDiscordKit_1_1DiscordConnection_a89b922e4c4d1f09e36946b42f3facaf9_cgraph.png" border="0" usemap="#ad8/d17/classDiscordKit_1_1DiscordConnection_a89b922e4c4d1f09e36946b42f3facaf9_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a4398ff98302d912d5b293d91a034439b" name="a4398ff98302d912d5b293d91a034439b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4398ff98302d912d5b293d91a034439b">&#9670;&#160;</a></span>UserCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DiscordKit::DiscordConnection::UserCommand </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void()&gt; &amp;&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   38</span>        {</div>
+<div class="line"><span class="lineno">   39</span>            <a class="code hl_variable" href="../../d8/d17/classDiscordKit_1_1DiscordConnection.html#afc3a2942b55115e1835d3f221198d96a">ws_</a>.<a class="code hl_function" href="../../d1/d0c/classDiscordKit_1_1WSClient.html#a1de8af76fc52d1538e8260525528eea9">RegisterCommand</a>(Commands::BasicCommand(<a class="code hl_enumvalue" href="../../d5/d70/namespaceDiscordKit_1_1Commands.html#a84d3956df3efc5ce3bd3aeec32895695a2e5264cd4abd7312d3c5668a8294ba17">Commands::AppCommandType::UserCommand</a>, name, description, handler));</div>
+<div class="line"><span class="lineno">   40</span>        }</div>
+<div class="ttc" id="anamespaceDiscordKit_1_1Commands_html_a84d3956df3efc5ce3bd3aeec32895695a2e5264cd4abd7312d3c5668a8294ba17"><div class="ttname"><a href="../../d5/d70/namespaceDiscordKit_1_1Commands.html#a84d3956df3efc5ce3bd3aeec32895695a2e5264cd4abd7312d3c5668a8294ba17">DiscordKit::Commands::UserCommand</a></div><div class="ttdeci">@ UserCommand</div><div class="ttdef"><b>Definition</b> BasicModels.hpp:13</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d17/classDiscordKit_1_1DiscordConnection_a4398ff98302d912d5b293d91a034439b_cgraph.png" border="0" usemap="#ad8/d17/classDiscordKit_1_1DiscordConnection_a4398ff98302d912d5b293d91a034439b_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aff773c72a7b16bf5b516c92b0113b3a9" name="aff773c72a7b16bf5b516c92b0113b3a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff773c72a7b16bf5b516c92b0113b3a9">&#9670;&#160;</a></span>intents_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/dc7/namespaceDiscordKit.html#ae1225572a4d6af4b91b26a25feaadf8e">Intents</a> DiscordKit::DiscordConnection::intents_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc3a2942b55115e1835d3f221198d96a" name="afc3a2942b55115e1835d3f221198d96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc3a2942b55115e1835d3f221198d96a">&#9670;&#160;</a></span>ws_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d0c/classDiscordKit_1_1WSClient.html">WSClient</a> DiscordKit::DiscordConnection::ws_</td>
         </tr>
       </table>
   </td>

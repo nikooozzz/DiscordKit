@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['token_5f_0',['token_',['../d1/d0c/classDiscordKit_1_1WSClient.html#a99056059a464cce40eb7ac583e50396b',1,'DiscordKit::WSClient']]]
+  ['opcode_0',['opcode',['../d0/d16/classDiscordKit_1_1Events_1_1Event.html#af096f1357a58770e5ed677bb967d01b1',1,'DiscordKit::Events::Event']]]
 ];

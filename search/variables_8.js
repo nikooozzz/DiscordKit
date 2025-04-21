@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['seq_0',['seq',['../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a8011b91e773d10d25245f20720e3ce1d',1,'DiscordKit::Events::Event']]],
-  ['ssl_5fctx_5f_1',['ssl_ctx_',['../d1/d0c/classDiscordKit_1_1WSClient.html#aa6185ba4ddccd8c532283795cf47c510',1,'DiscordKit::WSClient']]]
+  ['name_0',['name',['../d3/dd7/classDiscordKit_1_1Commands_1_1BasicCommand.html#a5f5171bf66c213b518fbc9ce0ce46c0b',1,'DiscordKit::Commands::BasicCommand::name'],['../d0/d16/classDiscordKit_1_1Events_1_1Event.html#a1e74724642d3e935bf5a89654b27a2f5',1,'DiscordKit::Events::Event::name']]]
 ];

@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="DiscordKit::Events\l::Dispatcher",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d82/classDiscordKit_1_1Events_1_1Dispatcher.html",tooltip=" "];
+  Node0 [id="Node000000",label="DiscordKit::Events\l::Event",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d16/classDiscordKit_1_1Events_1_1Event.html",tooltip="Model class for the discord gateway event payload structure."];
 }

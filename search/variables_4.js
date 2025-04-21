@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['intents_0',['intents',['../d8/d17/classDiscordKit_1_1DiscordConnection.html#abe6e580a0f2d92ed4176cc9a2df43ce3',1,'DiscordKit::DiscordConnection']]],
-  ['ioc_5f_1',['ioc_',['../d1/d0c/classDiscordKit_1_1WSClient.html#a4bfa4cfca3fb5342f657f77b35177284',1,'DiscordKit::WSClient']]]
+  ['gateway_5furl_5f_0',['gateway_url_',['../d1/d0c/classDiscordKit_1_1WSClient.html#a193b09add6e66b5ae00946a46c9f515d',1,'DiscordKit::WSClient']]]
 ];

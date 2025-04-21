@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['generalhandler_0',['GeneralHandler',['../dc/dac/classDiscordKit_1_1Events_1_1Handlers_1_1GeneralHandler.html#a389c17255b19dbfe15642384a35b545e',1,'DiscordKit::Events::Handlers::GeneralHandler']]]
+  ['fetchgatewayurl_5f_0',['fetchGatewayURL_',['../d1/d0c/classDiscordKit_1_1WSClient.html#a95005a5713c6cfe47769d028d96eb73b',1,'DiscordKit::WSClient']]]
 ];

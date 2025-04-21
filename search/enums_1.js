@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['opcode_0',['Opcode',['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ad',1,'DiscordKit']]]
+  ['intents_0',['Intents',['../d3/dc7/namespaceDiscordKit.html#ae1225572a4d6af4b91b26a25feaadf8e',1,'DiscordKit']]]
 ];

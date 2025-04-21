@@ -1,9 +1,24 @@
 var searchData=
 [
-  ['op_0',['OP',['../d6/db9/Dispatcher_8hpp.html#a41c9511e6737f680621fc59cad0017db',1,'Dispatcher.hpp']]],
-  ['opcode_1',['opcode',['../d0/d16/classDiscordKit_1_1Events_1_1Event.html#af096f1357a58770e5ed677bb967d01b1',1,'DiscordKit::Events::Event::opcode'],['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ad',1,'DiscordKit::Opcode']]],
-  ['opcodes_2ehpp_2',['Opcodes.hpp',['../da/d9e/Opcodes_8hpp.html',1,'']]],
-  ['operator_26_3',['operator&amp;',['../d9/d28/Intents_8hpp.html#a720581debcafbfb3d4611a1e67ad9254',1,'Intents.hpp']]],
-  ['operator_7c_4',['operator|',['../d9/d28/Intents_8hpp.html#a181b46176c37fbeb77966e2bc7a2fd34',1,'Intents.hpp']]],
-  ['operator_7c_3d_5',['operator|=',['../d9/d28/Intents_8hpp.html#aec1133731667016c216f8c6b9daca589',1,'Intents.hpp']]]
+  ['onauthenticationduplicate_0',['onAuthenticationDuplicate',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#a96b520b4f808a37a265545cc1d4e0775',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['onauthenticationfail_1',['onAuthenticationFail',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#acc59d041f60c4ca0fe1ab97ded258487',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['onauthenticationinvalid_2',['onAuthenticationInvalid',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#adca0d847ad657997c61c79dc59b8b9b0',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['ondisallowedintent_3',['onDisallowedIntent',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#aca1c3fd57654665d6ed62d3caebc758e',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['oninvalidintent_4',['onInvalidIntent',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#a455149017f562039f88178a8a397e175',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['oninvalidsequence_5',['onInvalidSequence',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#a62afc779e2555575f688a18afa3ece3d',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['oninvalidsession_6',['onInvalidSession',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#a1399f362fcd74c5d96ed7f32ada6d17c',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['oninvalidshard_7',['onInvalidShard',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#aec99f9165b58e585e6f0514f0d32db21',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['oninvalidversion_8',['onInvalidVersion',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#a85e006c32959a7fdc236ae2978be2aa2',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['onpayloadinvalid_9',['onPayloadInvalid',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#a528ec0b1cbaf965da5e77133af47eadd',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['onratelimit_10',['onRateLimit',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#a6a2894a05074fbc26bfe28a6b76da94c',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['onsessiontimeout_11',['onSessionTimeout',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#afb47ac118d475fbedf21a6b330b1c5f3',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['onshardrequired_12',['onShardRequired',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#ad046c7a8f307cb399cc7a4cc44daaa43',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['onunknownerror_13',['onUnknownError',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#a3375ad2293f365725bd166d0e0df3731',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['onunknownopcode_14',['onUnknownOpcode',['../d8/dd5/classDiscordKit_1_1Events_1_1Handlers_1_1ErrorHandler.html#a7957ba89f85e77404276af3779cb99b3',1,'DiscordKit::Events::Handlers::ErrorHandler']]],
+  ['op_15',['OP',['../d6/db9/Dispatcher_8hpp.html#a41c9511e6737f680621fc59cad0017db',1,'Dispatcher.hpp']]],
+  ['opcode_16',['opcode',['../d0/d16/classDiscordKit_1_1Events_1_1Event.html#af096f1357a58770e5ed677bb967d01b1',1,'DiscordKit::Events::Event::opcode'],['../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ad',1,'DiscordKit::Opcode']]],
+  ['opcodes_2ehpp_17',['Opcodes.hpp',['../da/d9e/Opcodes_8hpp.html',1,'']]],
+  ['operator_26_18',['operator&amp;',['../d3/dc7/namespaceDiscordKit.html#ac9e1d28c6608c5a4bd2e94ab560793a1',1,'DiscordKit']]],
+  ['operator_7c_19',['operator|',['../d3/dc7/namespaceDiscordKit.html#a5c940dfa44ceeed8439ac718f8aefebe',1,'DiscordKit']]],
+  ['operator_7c_3d_20',['operator|=',['../d3/dc7/namespaceDiscordKit.html#a2674ee77e98764bb3b46f9f6b79e6ba0',1,'DiscordKit']]]
 ];

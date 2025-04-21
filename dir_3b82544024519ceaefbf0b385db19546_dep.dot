@@ -15,4 +15,6 @@ digraph "include/DiscordKit"
   }
   }
   dir_3b82544024519ceaefbf0b385db19546->dir_297590b3aabe4e3103bdc9d227d18785 [headlabel="4", labeldistance=1.5 headhref="dir_000001_000003.html" href="dir_000001_000003.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_3b82544024519ceaefbf0b385db19546->dir_ab9d12e561805b90db0e77e1a434f118 [headlabel="3", labeldistance=1.5 headhref="dir_000001_000000.html" href="dir_000001_000000.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_297590b3aabe4e3103bdc9d227d18785->dir_ab9d12e561805b90db0e77e1a434f118 [headlabel="1", labeldistance=1.5 headhref="dir_000003_000000.html" href="dir_000003_000000.html" color="steelblue1" fontcolor="steelblue1"];
 }

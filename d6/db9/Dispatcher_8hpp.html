@@ -93,13 +93,13 @@ $(document).ready(function(){initNavTree('d6/db9/Dispatcher_8hpp.html','../../')
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">Dispatcher.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;nlohmann/json.hpp&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/de2/ErrorHandlers_8hpp_source.html">ErrorHandlers.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d7d/Event_8hpp_source.html">Event.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/ddd/Handler_8hpp_source.html">Handler.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d9e/Opcodes_8hpp_source.html">Opcodes.hpp</a>&quot;</code><br />
@@ -119,42 +119,24 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d82/classDiscordKit_1_1Events_1_1Dispatcher.html">DiscordKit::Events::Dispatcher</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler class for mapping and directing incoming events to respective callbacks.  <a href="../../d8/d82/classDiscordKit_1_1Events_1_1Dispatcher.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:d3/dc7/namespaceDiscordKit" id="r_d3/dc7/namespaceDiscordKit"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc7/namespaceDiscordKit.html">DiscordKit</a></td></tr>
+<tr class="memdesc:d3/dc7/namespaceDiscordKit"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header namespace containing everything <a class="el" href="../../d3/dc7/namespaceDiscordKit.html" title="Header namespace containing everything DiscordKit.">DiscordKit</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:df/dfe/namespaceDiscordKit_1_1Events" id="r_df/dfe/namespaceDiscordKit_1_1Events"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfe/namespaceDiscordKit_1_1Events.html">DiscordKit::Events</a></td></tr>
+<tr class="memdesc:df/dfe/namespaceDiscordKit_1_1Events"><td class="mdescLeft">&#160;</td><td class="mdescRight">Categorisation namespace for any logic regarding incoming events in the Discord Gateway. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a41c9511e6737f680621fc59cad0017db" id="r_a41c9511e6737f680621fc59cad0017db"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/Dispatcher_8hpp.html#a41c9511e6737f680621fc59cad0017db">OP</a> = <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ad">DiscordKit::Opcode</a></td></tr>
 <tr class="separator:a41c9511e6737f680621fc59cad0017db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa71e239f4f9d4ce8abaae8213e34ba68" id="r_aa71e239f4f9d4ce8abaae8213e34ba68"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/Dispatcher_8hpp.html#aa71e239f4f9d4ce8abaae8213e34ba68">HandlerFunc</a> = std::function&lt; void(const DiscordKit::Event &amp;)&gt;</td></tr>
-<tr class="separator:aa71e239f4f9d4ce8abaae8213e34ba68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a6b7146bff9d8be83857a647ad3cc31a0" id="r_a6b7146bff9d8be83857a647ad3cc31a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/Dispatcher_8hpp.html#a6b7146bff9d8be83857a647ad3cc31a0">dispatch</a> (const DiscordKit::Event &amp;event)</td></tr>
-<tr class="separator:a6b7146bff9d8be83857a647ad3cc31a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="aa71e239f4f9d4ce8abaae8213e34ba68" name="aa71e239f4f9d4ce8abaae8213e34ba68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa71e239f4f9d4ce8abaae8213e34ba68">&#9670;&#160;</a></span>HandlerFunc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d6/db9/Dispatcher_8hpp.html#aa71e239f4f9d4ce8abaae8213e34ba68">HandlerFunc</a> =  std::function&lt;void(const DiscordKit::Event &amp;)&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a41c9511e6737f680621fc59cad0017db" name="a41c9511e6737f680621fc59cad0017db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41c9511e6737f680621fc59cad0017db">&#9670;&#160;</a></span>OP</h2>
 
@@ -163,25 +145,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ad">OP</a> =  <a class="el" href="../../d3/dc7/namespaceDiscordKit.html#a7064057207fe21dc8009463af15758ad">DiscordKit::Opcode</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a6b7146bff9d8be83857a647ad3cc31a0" name="a6b7146bff9d8be83857a647ad3cc31a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b7146bff9d8be83857a647ad3cc31a0">&#9670;&#160;</a></span>dispatch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dispatch </td>
-          <td>(</td>
-          <td class="paramtype">const DiscordKit::Event &amp;&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
