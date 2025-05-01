@@ -1,0 +1,14 @@
+<map id="Emoji" name="Emoji">
+<area shape="rect" id="Node000001" title=" " alt="" coords="83,431,141,456"/>
+<area shape="rect" id="Node000002" href="$structSnowflake.html" title=" " alt="" coords="96,255,184,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,294,143,346,133,407,122,431,117,429,128,406,138,346,139,293"/>
+<area shape="rect" id="Node000005" href="$structUser.html" title=" " alt="" coords="49,343,101,368"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="125,293,86,344,82,341,121,289"/>
+<area shape="rect" id="Node000003" href="$structTimestamp.html" title=" " alt="" coords="92,167,188,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="143,206,143,254,137,254,137,206"/>
+<area shape="rect" id="Node000004" href="$classLimit.html" title=" " alt="" coords="89,5,191,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="143,44,143,166,137,166,137,44"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="88,379,109,429,104,431,83,381"/>
+<area shape="rect" id="Node000006" href="$structAsset.html" title=" " alt="" coords="5,255,64,280"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="34,293,38,318,47,330,58,340,55,344,43,334,34,320,29,294"/>
+</map>

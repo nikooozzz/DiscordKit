@@ -1,0 +1,9 @@
+<map id="Guild" name="Guild">
+<area shape="rect" id="Node000001" title=" " alt="" coords="29,445,85,471"/>
+<area shape="rect" id="Node000002" href="$structSnowflake.html" title=" " alt="" coords="13,255,101,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,294,59,445,54,445,54,294"/>
+<area shape="rect" id="Node000003" href="$structTimestamp.html" title=" " alt="" coords="9,167,105,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="59,206,59,254,54,254,54,206"/>
+<area shape="rect" id="Node000004" href="$classLimit.html" title=" " alt="" coords="5,5,108,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="59,44,59,166,54,166,54,44"/>
+</map>

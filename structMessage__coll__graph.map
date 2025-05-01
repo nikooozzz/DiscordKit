@@ -1,0 +1,15 @@
+<map id="Message" name="Message">
+<area shape="rect" id="Node000001" title=" " alt="" coords="166,464,246,489"/>
+<area shape="rect" id="Node000002" href="$structSnowflake.html" title=" " alt="" coords="239,255,327,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,294,290,326,287,364,278,404,260,441,247,455,232,466,229,462,244,451,256,439,273,403,282,363,284,326,283,294"/>
+<area shape="rect" id="Node000005" href="$structUser.html" title=" " alt="" coords="180,367,232,392"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="269,293,216,368,212,365,265,290"/>
+<area shape="rect" id="Node000003" href="$structTimestamp.html" title=" " alt="" coords="9,167,105,192"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="54,206,48,265,51,300,60,332,87,375,121,412,157,441,188,462,185,466,154,446,118,416,82,378,56,334,46,300,43,265,49,205"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,194,254,252,252,257,99,199"/>
+<area shape="rect" id="Node000004" href="$classLimit.html" title=" " alt="" coords="5,5,108,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="59,44,59,166,54,166,54,44"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="209,406,209,464,203,464,203,406"/>
+<area shape="rect" id="Node000006" href="$structAsset.html" title=" " alt="" coords="157,255,215,280"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="187,294,190,333,202,366,197,368,185,334,182,294"/>
+</map>
