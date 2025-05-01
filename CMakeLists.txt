@@ -17,6 +17,8 @@ target_include_directories(discordium PUBLIC
 
 file(GLOB_RECURSE DISCORDIUM_SOURCES CONFIGURE_DEPENDS 
     src/*.cpp
+)
+file(GLOB_RECURSE DISCORDIUM_HEADERS CONFIGURE_DEPENDS 
     include/discordium/*.hpp
 )
 target_sources(discordium PRIVATE ${DISCORDIUM_SOURCES})
@@ -47,4 +49,19 @@ install(EXPORT discordiumTargets
     FILE discordiumConfig.cmake
     NAMESPACE discordium::
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/discordium
+)
+
+find_package(nlohmann_json REQUIRED)
+target_link_libraries(discordium PUBLIC nlohmann_json::nlohmann_json)
+
+if(MSVC)
+    target_compile_options(discordium PRIVATE /W4)
+else()
+    target_compile_options(discordium PRIVATE -Wall -Wextra -Wpedantic)
+endif()
+
+target_compile_definitions(discordium PUBLIC
+    DISCORDIUM_VERSION_MAJOR=${PROJECT_VERSION_MAJOR}
+    DISCORDIUM_VERSION_MINOR=${PROJECT_VERSION_MINOR}
+    DISCORDIUM_VERSION_PATCH=${PROJECT_VERSION_PATCH}
 )
